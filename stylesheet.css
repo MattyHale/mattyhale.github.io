@@ -49,14 +49,12 @@ body, .background-color{
   max-width: 1170px;
   background-color: transparent;
 }
-div{
-  background-color: transparent;
-}
+
 /* Row */
 .row {
+  margin-top: 10px;
   margin-right: 15px;
   margin-left: 15px;
-  background-color: transparent;
 }
 /* Row Clear Float*/
 .row:after {
@@ -161,8 +159,10 @@ background-color: transparent;
     padding: 0px;
     margin: 0px;
 background-color: transparent;
-    
 }
+
+.nav{
+background-color: transparent;}
 
 .nav-primary {
     margin-top: 150px;
