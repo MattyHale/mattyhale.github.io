@@ -25,6 +25,17 @@ Layout Styles
 /* Content Container*/
 
 html,body{
+ 
+  background:     no-repeat center center fixed; 
+     background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#003));
+    background-image: -webkit-linear-gradient(top, #000, #003);
+    background-image: -moz-linear-gradient(top, #000, end-color);
+    background-image: linear-gradient(to bottom, #000, #003);
+    background-image: linear-gradient(to bottom, #000, #003);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -33,13 +44,8 @@ html,body{
     font-family: 'Cinzel', serif;
     color: antiquewhite; 
 }
-body, .background-color{    
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#003));
-    background-image: -webkit-linear-gradient(top, #000, #003);
-    background-image: -moz-linear-gradient(top, #000, end-color);
-    background-image: linear-gradient(to bottom, #000, #003);
-    background-image: linear-gradient(to bottom, #000, #003);
-    color: antiquewhite; 
+html, body, .background-color{    
+ 
 }
 .container {
   padding-right: auto;
@@ -119,9 +125,8 @@ background-color: transparent;
 text-align: center;
 padding-top: 10px;
 padding-bottom: 0px;
-background-color: #000005;
-/*height: 150px;
-width: 100%;*/
+background-color: transparent;
+margin-top: 10px;
 }
 
 /*Logo Modules*/
@@ -160,7 +165,7 @@ width: 100%;*/
 }
 
 .nav-primary {
-margin-top: 150px;
+margin-top: 5px;
 font-size: 1.2em;
 position: relative;
 background-color: transparent;
@@ -175,7 +180,7 @@ font-family: 'Cinzel', serif;
 background-color: transparent;
 text-decoration: none;
 font-size: 2em;
-margin: 50px 10px;
+margin: 15px 10px;
 display: block;
 
 } 
@@ -269,7 +274,7 @@ a.btn-gallery:before{
     border-style: solid;
     border-width: 0.2px;
     float: left;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
     /*border-color: dimgray;*/
    animation-duration: 20s;
    animation-name: bg-image;
