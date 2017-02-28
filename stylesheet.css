@@ -44,9 +44,7 @@ html,body{
     font-family: 'Cinzel', serif;
     color: antiquewhite; 
 }
-html, body, .background-color{    
- 
-}
+
 .container {
   padding-right: auto;
   padding-left: auto;
@@ -115,7 +113,7 @@ Modules
 
 .text-top{
 font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
+font-size: 12px;
 margin: 5px 2px;
 text-align: center;
 background-color: transparent;
@@ -126,7 +124,7 @@ text-align: center;
 padding-top: 10px;
 padding-bottom: 0px;
 background-color: transparent;
-margin-top: 10px;
+margin: 10px 10px 0px 0px;
 }
 
 /*Logo Modules*/
@@ -173,14 +171,13 @@ background-color: transparent;
 
 .btn-head{
 text-align: center;
-font-size: 1.125em;
+font-size: 1.8em;
 color: #daa530;
 margin-top: 0.1em;
 font-family: 'Cinzel', serif;
 background-color: transparent;
 text-decoration: none;
-font-size: 2em;
-margin: 15px 10px;
+margin: 15px 5px;
 display: block;
 
 } 
@@ -266,40 +263,39 @@ a.btn-gallery:before{
 
 
 /*Background Modules*/
-.bg-image  {
-    height: 100px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    border-style: solid;
-    border-width: 0.2px;
-    float: left;
-  margin-bottom: 50px;
-    /*border-color: dimgray;*/
-   animation-duration: 20s;
-   animation-name: bg-image;
-   animation-iteration-count: infinite;
-   border-radius: 50%;
-   background-repeat: round;
-   }
-
-.animation{
-   -moz-animation: bg-image 20s infinite;
-   -o-animation: bg-image 20s infinite;
-   -webkit-animation: bg-image 20s infinite;
-   height: 100%;
-   width: 100%;
-   margin: 0px;
-   padding: 0px;
+.img-error{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 100px 100px;
 }
 
+.bg-img  {
+   height: 500px;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   border-style: solid;
+   border-width: 0.2px;
+   float: left;
+   animation-name: bg-img;
+   border-radius: 50%;
+   background-repeat: round;
+  
+   animation: bg-img 20s infinite;
+   -o-animation: bg-img 20s infinite;
+   -webkit-animation: bg-img 20s infinite;
+   animation: bg-img 20s infinite;
+   margin: 20px 20px;
+   padding: 0px;
+
+}
 
 @-webkit-keyframes bg-img {
    0% {opacity:1;} 0%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
    10% {opacity:1;} 10%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    20% {opacity:1;} 20%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
-   30% {opacity:1;} 30%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
-   40% {opacity:1;} 40%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
+   30% {opacity:1;} 30%{background-image: url("https://www.facebook.com/gosfordjeweller/photos/a.1857129917898167.1073741829.1856380227973136/1874496909494801/?type=3&theater");}
+   40% {opacity:1;} 40%{background-image: url("https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/16649186_1874496909494801_2391325917768188728_n.jpg?oh=c809dd7adcf9d8e71360f5575c1d202b&oe=5944576C");}
    50% {opacity:1;} 50%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    60% {opacity:1;} 60%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
    70% {opacity:1;} 70%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977414_1858602107750948_7672803409985659891_n.jpg?oh=9134552c00184ae3d183fa27532e994a&oe=591BF0A6");}
@@ -309,53 +305,51 @@ a.btn-gallery:before{
 }
 
 @-moz-keyframes bg-img {
-   0% {opacity:1;} 0%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
+ 0% {opacity:1;} 0%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
    10% {opacity:1;} 10%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    20% {opacity:1;} 20%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
-   30% {opacity:1;} 30%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
-   40% {opacity:1;} 40%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
+   30% {opacity:1;} 30%{background-image: url("https://www.facebook.com/gosfordjeweller/photos/a.1857129917898167.1073741829.1856380227973136/1874496909494801/?type=3&theater");}
+   40% {opacity:1;} 40%{background-image: url("https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/16649186_1874496909494801_2391325917768188728_n.jpg?oh=c809dd7adcf9d8e71360f5575c1d202b&oe=5944576C");}
    50% {opacity:1;} 50%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    60% {opacity:1;} 60%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
    70% {opacity:1;} 70%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977414_1858602107750948_7672803409985659891_n.jpg?oh=9134552c00184ae3d183fa27532e994a&oe=591BF0A6");}
    80% {opacity:1;} 80%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    90% {opacity:1;} 90%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
    100% {opacity:1;}100%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
-}
+   }
 
 @-o-keyframes bg-img 
 {
    0% {opacity:1;} 0%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
    10% {opacity:1;} 10%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    20% {opacity:1;} 20%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
-   30% {opacity:1;} 30%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
-   40% {opacity:1;} 40%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
+   30% {opacity:1;} 30%{background-image: url("https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/15977414_1858602107750948_7672803409985659891_n.jpg?oh=4d60aecbae6b9d3e037f72b36fa05f26&oe=59437DA6");}
+   40% {opacity:1;} 40%{background-image: url("https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/16649186_1874496909494801_2391325917768188728_n.jpg?oh=c809dd7adcf9d8e71360f5575c1d202b&oe=5944576C");}
    50% {opacity:1;} 50%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    60% {opacity:1;} 60%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
    70% {opacity:1;} 70%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977414_1858602107750948_7672803409985659891_n.jpg?oh=9134552c00184ae3d183fa27532e994a&oe=591BF0A6");}
    80% {opacity:1;} 80%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    90% {opacity:1;} 90%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
    100% {opacity:1;}100%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
-}
-
-@keyframes bg-image
+   }
+@keyframes bg-img
 {
-   0% {opacity:1;} 0%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
+    0% {opacity:1;} 0%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
    10% {opacity:1;} 10%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    20% {opacity:1;} 20%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
-   30% {opacity:1;} 30%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
-   40% {opacity:1;} 40%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
+   30% {opacity:1;} 30%{background-image: url("https://www.facebook.com/gosfordjeweller/photos/a.1857129917898167.1073741829.1856380227973136/1874496909494801/?type=3&theater");}
+   40% {opacity:1;} 40%{background-image: url("https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/16649186_1874496909494801_2391325917768188728_n.jpg?oh=c809dd7adcf9d8e71360f5575c1d202b&oe=5944576C");}
    50% {opacity:1;} 50%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    60% {opacity:1;} 60%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
    70% {opacity:1;} 70%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977414_1858602107750948_7672803409985659891_n.jpg?oh=9134552c00184ae3d183fa27532e994a&oe=591BF0A6");}
    80% {opacity:1;} 80%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    90% {opacity:1;} 90%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
    100% {opacity:1;}100%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
-     
- }
+   }
      
 
-.bg-image > img {
-   position: absolute;
+.bg-img > img {
+   /*position: absolute;*/
     top: -9999px;
     bottom: -9999px;
     left: -9999px;
@@ -391,7 +385,6 @@ padding: 25px;
 display: inline-block;
 opacity: 0.1;
 margin-top: 10px;
-
 }
 
 /*******FOOTER*********/
@@ -432,13 +425,13 @@ BUTTONS
 
 @media (min-width: 48em) {
   .btn {
-    font-size: 20px;
+  font-size: 20px;
     /*padding: ;*/
-    stroke: 1px #ffffff;
-    border-radius: auto;
-    display: inline-block;
-  border-right: 2px solid #daa530;
-  width: 100%;
+  stroke: 1px #ffffff;
+  border-radius: auto;
+  display: inline-block;
+  margin-right: 0px;
+  /*width: 100%;*/
   position: relative;
   }
 }
@@ -476,7 +469,7 @@ center image "bg-img"
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 @media only screen and (min-width: 600.1px) {
-  .bg-image{
+  .bg-img{
     margin-top: 30px;
     height: 500px;
     width: 70%;
@@ -488,7 +481,7 @@ center image "bg-img"
  }
 
 @media only screen and (max-width:600px) {
-  .bg-image{
+  .bg-img{
     margin-top: 30px;
     height: 500px;
     width: 100%;
@@ -501,7 +494,7 @@ center image "bg-img"
   }
 
 @media only screen and (max-width:480px) {
-  .bg-image{
+  .bg-img{
     margin-top: 30px;
     height: 300px;
     width: 100%;
