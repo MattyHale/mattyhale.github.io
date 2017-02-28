@@ -263,11 +263,6 @@ a.btn-gallery:before{
 
 
 /*Background Modules*/
-.img-error{
-   text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
-   margin: 100px 100px;
-}
 
 .bg-img  {
    height: 500px;
@@ -287,14 +282,13 @@ a.btn-gallery:before{
    animation: bg-img 20s infinite;
    margin: 20px 20px;
    padding: 0px;
-
 }
 
 @-webkit-keyframes bg-img {
    0% {opacity:1;} 0%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
    10% {opacity:1;} 10%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    20% {opacity:1;} 20%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
-   30% {opacity:1;} 30%{background-image: url("https://www.facebook.com/gosfordjeweller/photos/a.1857129917898167.1073741829.1856380227973136/1874496909494801/?type=3&theater");}
+   30% {opacity:1;} 30%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977414_1858602107750948_7672803409985659891_n.jpg?oh=9134552c00184ae3d183fa27532e994a&oe=591BF0A6");}
    40% {opacity:1;} 40%{background-image: url("https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/16649186_1874496909494801_2391325917768188728_n.jpg?oh=c809dd7adcf9d8e71360f5575c1d202b&oe=5944576C");}
    50% {opacity:1;} 50%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    60% {opacity:1;} 60%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
@@ -308,7 +302,7 @@ a.btn-gallery:before{
  0% {opacity:1;} 0%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
    10% {opacity:1;} 10%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    20% {opacity:1;} 20%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
-   30% {opacity:1;} 30%{background-image: url("https://www.facebook.com/gosfordjeweller/photos/a.1857129917898167.1073741829.1856380227973136/1874496909494801/?type=3&theater");}
+   30% {opacity:1;} 30%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977414_1858602107750948_7672803409985659891_n.jpg?oh=9134552c00184ae3d183fa27532e994a&oe=591BF0A6");}
    40% {opacity:1;} 40%{background-image: url("https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/16649186_1874496909494801_2391325917768188728_n.jpg?oh=c809dd7adcf9d8e71360f5575c1d202b&oe=5944576C");}
    50% {opacity:1;} 50%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    60% {opacity:1;} 60%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
@@ -337,7 +331,7 @@ a.btn-gallery:before{
     0% {opacity:1;} 0%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
    10% {opacity:1;} 10%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    20% {opacity:1;} 20%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
-   30% {opacity:1;} 30%{background-image: url("https://www.facebook.com/gosfordjeweller/photos/a.1857129917898167.1073741829.1856380227973136/1874496909494801/?type=3&theater");}
+   30% {opacity:1;} 30%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977414_1858602107750948_7672803409985659891_n.jpg?oh=9134552c00184ae3d183fa27532e994a&oe=591BF0A6");}
    40% {opacity:1;} 40%{background-image: url("https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/16649186_1874496909494801_2391325917768188728_n.jpg?oh=c809dd7adcf9d8e71360f5575c1d202b&oe=5944576C");}
    50% {opacity:1;} 50%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826349_1856386524639173_2677045794754472763_n.jpg?oh=a5e295e895b433bba01b464420bbe129&oe=59051057");}
    60% {opacity:1;} 60%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
