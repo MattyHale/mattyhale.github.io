@@ -370,6 +370,8 @@ hero-title
 .customer-testimonials{
   margin-top: 20px;
   margin-bottom: 0px;
+  float:left;
+  margin-left: 10%;
 }
 
 .reviews{
