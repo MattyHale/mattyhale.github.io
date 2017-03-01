@@ -389,7 +389,6 @@ hero-title
 .test-align{
   float:left;
   margin: 10px;
-  height: 80px;
   padding: none;
 }
 
@@ -417,7 +416,7 @@ color: white;
 font-size: 5em;
 padding: 5px;
 display: inline-block;
-opacity: 1;
+opacity: 0.8;
 margin: 10px;
 text-align: center;
 text-decoration: none;
