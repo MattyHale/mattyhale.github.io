@@ -122,7 +122,6 @@ font-size: 16px;
 float: left;
 background-color: transparent;
 margin: 5px 10px;
-
 }
 
 .header-primary {
@@ -140,7 +139,7 @@ margin-right:0%;
     display: inline-block;
     color: white;
     opacity: 0.8;
-    margin: 2px 2px;
+    margin: 2px 20px;
     text-align: center;
     
 }
@@ -215,7 +214,7 @@ font-size: 1.213em;
 font-weight: bold;
 border-radius: 4px;
 transition: all 0.3s ease 0s;
-margin: 10px 10px;
+margin: 10px 50px;
 background-color: transparent;
 }
 
@@ -224,7 +223,6 @@ background: transparent;
 border-color: #8DC63F;
 color: silver;
 border: transparent;
-margin-right: 6%;
 }
 
 .btn-nav {
@@ -260,14 +258,17 @@ a.btn-call-now:before{
    vertical-align: middle;
    color:#8DC63F;
    padding-right: 10px;
+   text-decoration: none;
 }
 a.btn-map:before{ 
    font-family: FontAwesome;
    content: "\f041";
    display: inline-block;
    vertical-align: middle;
-   color:red;
+   color:lightpink;
    padding-right: 10px;
+   margin-left: -5px;
+   text-decoration: none;
 }
 
 a.btn-gallery:before{ 
@@ -275,8 +276,9 @@ a.btn-gallery:before{
    content: "\f083";
    display: inline-block;
    vertical-align: middle;
-   color: darkgoldenrod;
+   color: silver;
    padding-right: 10px;
+   text-decoration: none;
 }
 
 
@@ -289,7 +291,7 @@ a.btn-gallery:before{
    overflow: hidden;
    position: relative;
    border-style: solid;
-   border-width: 0.2px;
+   border-width: 0px;
    float: left;
    animation-name: bg-img;
    border-radius: 50%;
@@ -407,6 +409,8 @@ hero-title
 .media, .media-body {
 overflow:hidden;
 font-weight: bold;
+text-decoration: none;
+
 }
 .media-item i{
 color: white;
@@ -419,6 +423,10 @@ margin-bottom: 0px;
 margin-top: 0px;
 text-align: center;
 text-decoration: none;
+}
+a{
+text-decoration: none !important;
+border: transparent !important;
 }
 
 /*******FOOTER*********/
