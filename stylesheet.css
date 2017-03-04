@@ -50,6 +50,11 @@ li{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.services{
+  text-align: left !important;
+  margin-left: 10px !important;
+}
+
 .container {
   padding-right: auto;
   padding-left: auto;
@@ -194,7 +199,6 @@ font-family: 'Cinzel', serif;
 background-color: transparent;
 text-decoration: none;
 margin: 15px 5px;
-margin-bottom: 50px;
 display: block;
 }
 
@@ -228,7 +232,6 @@ border: transparent;
 .btn-nav {
     color: silver;
     padding:10px, 10px;
-    margin-bottom: 10px;
 }
 
 /************button hover****************/
@@ -258,6 +261,7 @@ a.btn-call-now:before{
    vertical-align: middle;
    color:#8DC63F;
    padding-right: 10px;
+   margin: 1px;
    text-decoration: none;
 }
 a.btn-map:before{ 
@@ -267,7 +271,7 @@ a.btn-map:before{
    vertical-align: middle;
    color:lightpink;
    padding-right: 10px;
-   margin-left: -5px;
+   margin: 1px;
    text-decoration: none;
 }
 
@@ -278,6 +282,7 @@ a.btn-gallery:before{
    vertical-align: middle;
    color: silver;
    padding-right: 10px;
+   margin: 1px;
    text-decoration: none;
 }
 
