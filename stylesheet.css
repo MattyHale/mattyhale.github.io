@@ -298,17 +298,14 @@ a.btn-gallery:before{
    border-style: solid;
    border-width: 0px;
    float: left;
-   animation-name: bg-img;
    border-radius: 50%;
    background-repeat: round;
    text-align: center;
    background-color: transparent;
-
-   animation: bg-img 20s infinite;
-   -o-animation: bg-img 20s infinite;
-   -moz-animation: bg-img;
-   -webkit-animation: bg-img 20s infinite;
-   animation: bg-img 20s infinite;
+   -o-animation: 'bg-img' 20s infinite;
+   -moz-animation: 'bg-img' 0s inherit;
+   -webkit-animation: 'bg-img' 20s infinite;
+   animation: 'bg-img' 20s infinite;
    margin-bottom: 20px;
    margin-left: 0px;
 }
@@ -328,7 +325,7 @@ a.btn-gallery:before{
 }
 
 @-moz-keyframes bg-img {
- background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919")
+ background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919)
    }
 
 @-o-keyframes bg-img 
