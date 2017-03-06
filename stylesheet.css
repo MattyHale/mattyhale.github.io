@@ -302,6 +302,7 @@ a.btn-gallery:before{
    border-radius: 50%;
    background-repeat: round;
    text-align: center;
+   background-color: transparent;
 
    animation: bg-img 20s infinite;
    -o-animation: bg-img 20s infinite;
