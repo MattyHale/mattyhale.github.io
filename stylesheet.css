@@ -303,7 +303,6 @@ a.btn-gallery:before{
    text-align: center;
    background-color: transparent;
    -o-animation: 'bg-img' 20s infinite;
-   -moz-animation: 'bg-img' 0s inherit;
    -webkit-animation: 'bg-img' 20s infinite;
    animation: 'bg-img' 20s infinite;
    margin-bottom: 20px;
@@ -323,10 +322,6 @@ a.btn-gallery:before{
    90% {opacity:1;} 90%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15826484_1856386611305831_4509009472846063428_n.jpg?oh=6d9383e3650997a1355bb65e939e0755&oe=5919F4B4");}
    100% {opacity:1;}100%{background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919");}
 }
-
-@-moz-keyframes bg-img {
- background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/15977693_1858601077751051_7583068715322142736_n.jpg?oh=b3294eceebe94f0892d6a6988e1888c0&oe=59475919)
-   }
 
 @-o-keyframes bg-img 
 {
