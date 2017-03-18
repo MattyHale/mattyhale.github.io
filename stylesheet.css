@@ -27,11 +27,11 @@ Layout Styles
 html,body{
   background-color: black;
   background: no-repeat center center fixed; 
-     background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#003));
-    background-image: -webkit-linear-gradient(top, #000, #003);
-    background-image: -moz-linear-gradient(top, #000, end-color);
-    background-image: linear-gradient(to bottom, #000, #003);
-    background-image: linear-gradient(to bottom, #000, #003);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#003));
+  background:-webkit-linear-gradient(top, #000, #003);
+  background:-moz-linear-gradient(top, #000, end-color);
+  background: linear-gradient(to bottom, #000, #003);
+  background: linear-gradient(to bottom, #000, #003);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -301,7 +301,6 @@ a.btn-gallery:before{
    border-radius: 50%;
    background-repeat: round;
    text-align: center;
-   background-color: transparent;
    -o-animation: 'bg-img' 20s infinite;
    -webkit-animation: 'bg-img' 20s infinite;
    animation: 'bg-img' 20s infinite;
