@@ -202,64 +202,41 @@ display: block;
  
 /*Button Modules*/
 .btn {
+width: 200px;
 list-style: none;
 display: inline-block;
 text-align: center;
 white-space: nowrap;
 vertical-align: middle;
-border: 1px solid transparent;
 cursor: pointer;
 text-decoration: none;
-padding: 12px 10px;
-font-size: 1.213em;
+padding: 10px 10px;
+font-size: 16px;;
 font-weight: bold;
-border-radius: 4px;
-transition: all 0.3s ease 0s;
-margin: 0px 50px;
+transition: all 0.1s ease 0s;
+margin: 5px 50px;
 background-color: transparent;
-}
-
-.btn-call-now {
-background: transparent;
-border-color: #8DC63F;
 color: silver;
-border: transparent;
+outline: 1.5px solid silver;
+border-radius: 100px 100px;
 }
 
-.btn-nav {
-    color: silver;
-    padding:10px, 10px;
-}
-
-.btn-home{
-    color: silver;
-    padding:10px, 10px;
-}
 
 /************button hover****************/
 
-.btn-head:hover {
+/**Heading**/
+.btn-head:hover{
   background-color: transparent;
   border-color: transparent;
 }
 
-.btn-nav:hover {
+/**Nav buttons top**/
+.btn:hover {
   background-color: aquamarine;
   color:black ;
   border-color: transparent;
 }
 
-.btn-call-now:hover {
-  background-color: aquamarine;
-  color:black;
-  border-color: transparent;
-}
-
-.btn-home:hover {
-  background-color: aquamarine;
-  color:black;
-  border-color: transparent;
-}
 /***** FONT AWESOME - NAV *****/
 
 a.btn:before{ 
@@ -391,7 +368,7 @@ text-align: center;
 
 MEDIA (for big screens)
 
-the rest should be mobile first
+========================= Gallery (pg.2) Bellow index Media queries!!!!
 
 @@@@@@@@@@@@@@@@@@@@
 ********************
@@ -407,24 +384,20 @@ BUTTONS
 @@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 @media (min-width: 580px){
   .btn-head{
-     font-size: 40px;
-     display: block;
-     margin: 30px;
-     margin-top: 1px;
-     padding: none;
+    font-size: 40px;
+    display: block;
+    margin: 30px;
+    margin-top: 1px;
+    padding: none;
   }
 }
 
 @media (min-width: 48em) {
   .btn {
+  width: 400px;
   font-size: 20px;
-    /*padding: ;*/
   stroke: 1px #ffffff;
-  border-radius: auto;
-  display: inline-block;
   margin-right: 40px;
-  /*width: 100%;*/
-  position: relative;
   }
 }
 
@@ -504,14 +477,14 @@ center image "bg-img"
 @media only screen and (min-width: 480px){
   .media-item i{
     margin-left: 10%;
-    font-size: 100px;
+    font-size: 70px;
   }
 }  
 
 @media only screen and (min-width: 850px){
   .media-item i{
     margin-left: 12.5%;
-    font-size: 130px;
+    font-size: 110px;
   }
 }  
  
@@ -522,7 +495,7 @@ center image "bg-img"
 
 /***************************
 ****************************
-GALLERY
+GALLERY========GALLERY=====GALLERY=====GALLERY========GALLERY
 ****************************
 ***************************/
 
