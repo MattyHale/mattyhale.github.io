@@ -231,6 +231,11 @@ border: transparent;
     padding:10px, 10px;
 }
 
+.btn-home{
+    color: silver;
+    padding:10px, 10px;
+}
+
 /************button hover****************/
 
 .btn-head:hover {
@@ -249,40 +254,48 @@ border: transparent;
   color:black;
   border-color: transparent;
 }
+
+.btn-home:hover {
+  background-color: aquamarine;
+  color:black;
+  border-color: transparent;
+}
 /***** FONT AWESOME - NAV *****/
+
+a.btn:before{ 
+   font-family: FontAwesome;
+   display: inline-block;
+   vertical-align: middle;
+   padding-right: 10px;
+   padding-bottom: 5px;
+   margin: 1px;
+   text-decoration: none;
+   font-size: 1.5em;
+}
 
 a.btn-call-now:before{ 
    font-family: FontAwesome;
    content: "\f098";
-   display: inline-block;
-   vertical-align: middle;
    color:#8DC63F;
-   padding-right: 10px;
-   margin: 1px;
-   text-decoration: none;
 }
+   
 a.btn-map:before{ 
    font-family: FontAwesome;
    content: "\f041";
-   display: inline-block;
-   vertical-align: middle;
-   color:lightpink;
-   padding-right: 10px;
-   margin: 1px;
-   text-decoration: none;
+   color:pink;
 }
 
 a.btn-gallery:before{ 
    font-family: FontAwesome;
    content: "\f083";
-   display: inline-block;
-   vertical-align: middle;
    color: silver;
-   padding-right: 10px;
-   margin: 1px;
-   text-decoration: none;
 }
 
+a.btn-home:before{ 
+   font-family: FontAwesome;
+   content: "\f015";
+   color: red;
+}
 
 
 /*Background Modules*/
@@ -398,11 +411,11 @@ text-decoration: none;
 }
 .media-item i{
 color: white;
-font-size: 70px;
+font-size: 30px;
 padding: 5px;
 display: inline-block;
 opacity: 0.8;
-margin-left: 50px;
+margin-left: 10%;
 margin-bottom: 0px;
 margin-top: 0px;
 text-align: center;
@@ -541,13 +554,19 @@ center image "bg-img"
   **********************************/
   
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 480px){
   .media-item i{
-    margin-left: 25%;
-    font-size: 150px;
+    margin-left: 10%;
+    font-size: 100px;
   }
 }  
 
+@media only screen and (min-width: 850px){
+  .media-item i{
+    margin-left: 12.5%;
+    font-size: 130px;
+  }
+}  
  
 
 
@@ -556,8 +575,98 @@ center image "bg-img"
 
 /***************************
 ****************************
-Theme Styles
+GALLERY
 ****************************
 ***************************/
+
+.wrap {
+   overflow: hidden;
+   margin: 0px;
+}
+.box {
+   float: left;
+   position: relative;
+   width: 33%;
+   padding-bottom: 33%;
+}
+.boxInner {
+   position: absolute;
+   left: 10px;
+   right: 10px;
+   top: 10px;
+   bottom: 10px;
+   overflow: hidden;
+}
+.boxInner img {
+   width: 100%;
+}
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -50px;
+   background: #000;
+   background: rgba(0, 0, 0, 0.5);
+   color: #FFF;
+   padding: 0px;
+   text-align: center;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+   margin-bottom: 0;
+}
+
+@media only screen and (max-width : 600px) {
+.gallery-img{
+width: 400px;
+height: 100%;
+margin-top: -60px;
+   }
+}
+@media only screen and (max-width : 480px) {
+.gallery-img{
+width: 300px;
+height: 100%;
+margin-top: -60px;
+   }
+}
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+      margin-top: -10px;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+      margin-top: -10px;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+      margin-top: -10px;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+      margin-top: -10px;
+   }
+}
+
 
 

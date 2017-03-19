@@ -14,10 +14,59 @@ html {
   box-sizing: inherit;
 }
 
+/* Row */
+.row {
+  margin-top: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+/* Row Clear Float*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Media Query excludes extra small devices and includes small and above */
+[class*='col-'] {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 48em) {
+  [class*='col-'] {
+    float: left;
+  }
+  /* Column Two Thirds */
+  .col-2-3 {
+    width: 66.6666%;
+  }
+  /* Column Third */
+  .col-1-3 {
+    width: 33.3333%;
+  }
+  .col-1-2 {
+    width: 50%;
+}
+}
+
+@media (min-width: 48em) {
+  .pull-right-sm {
+    float:right;
+  }
+}
+
+@media only screen and (max-width : 47.9375em) {
+  .remove-gutter-xs {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 body {
    margin: 0;
    padding: 0;
-   background: antiquewhite;
+   background: #003;
    font: 10px/13px 'Lucida Sans',sans-serif;
 }
 .wrap {
@@ -27,8 +76,8 @@ body {
 .box {
    float: left;
    position: relative;
-   width: 20%;
-   padding-bottom: 20%;
+   width: 33%;
+   padding-bottom: 33%;
 }
 .boxInner {
    position: absolute;
@@ -88,3 +137,5 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
       padding-bottom: 25%;
    }
 }
+
+@import 'stylesheet.css';
