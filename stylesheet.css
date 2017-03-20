@@ -189,7 +189,7 @@ display: block;
 
 .btn-head{
 text-align: center;
-font-size: 1.8em;
+font-size: 1.8em !important;
 color: #daa530;
 margin-top: 0.1em;
 font-family: 'Cinzel', serif;
