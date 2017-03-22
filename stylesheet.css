@@ -513,13 +513,6 @@ center image "bg-img"
   @@@@@@@@@@@@@@@@@@
   **********************************/
 
-@media only screen and (min-height: 1365) and (min-width: 1023px) {
-    .media-item i {
-        margin-left: 0px;
-        font-size: 10px;
-    }
-}
-
 @media only screen and (min-width: 480px) {
     .media-item i {
         margin-left: 8%;
