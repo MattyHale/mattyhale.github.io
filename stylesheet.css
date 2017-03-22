@@ -1,113 +1,129 @@
-
 /***************************
 ****************************
 Reset
 ****************************
 ***************************/
+
 @import 'normalize.css';
 
 /* Change all elements to use border-box */
+
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
+
 
 /***************************
 ****************************
 Layout Styles
 ****************************
 ***************************/
+
+
 /* Content Container*/
 
-html,body{
-  background-color: black;
-  background: no-repeat center center fixed; 
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#003));
-  background:-webkit-linear-gradient(top, #000, #003);
-  background:-moz-linear-gradient(top, #000, end-color);
-  background: linear-gradient(to bottom, #000, #003);
-  background: linear-gradient(to bottom, #000, #003);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+html,
+body {
+    background-color: black;
+    background: no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#003));
+    background: -webkit-linear-gradient(top, #000, #003);
+    background: -moz-linear-gradient(top, #000, end-color);
+    background: linear-gradient(to bottom, #000, #003);
+    background: linear-gradient(to bottom, #000, #003);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     font-family: 'Cinzel', serif;
-    color: antiquewhite; 
+    color: antiquewhite;
     font-weight: none;
 }
 
-li{
-  font-family: Arial, Helvetica, sans-serif;
+li {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.services{
-  text-align: left !important;
-  margin-left: 10px !important;
+.services {
+    text-align: left !important;
+    margin-left: 10px !important;
 }
 
 .container {
-  padding-right: auto;
-  padding-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1170px;
-  background-color: transparent;
+    padding-right: auto;
+    padding-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+    background-color: transparent;
 }
+
 
 /* Row */
+
 .row {
-  margin-top: 5px;
-  margin-right: 15px;
-  margin-left: 15px;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
+
+
 /* Row Clear Float*/
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
+
+
 /* Media Query excludes extra small devices and includes small and above */
+
 [class*='col-'] {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 @media (min-width: 48em) {
-  [class*='col-'] {
-    float: left;
-  }
-  /* Column Two Thirds */
-  .col-2-3 {
-    width: 66.6666%;
-  }
-  /* Column Third */
-  .col-1-3 {
-    width: 33.3333%;
-  }
-  .col-1-2 {
-    width: 50%;
-}
+    [class*='col-'] {
+        float: left;
+    }
+    /* Column Two Thirds */
+    .col-2-3 {
+        width: 66.6666%;
+    }
+    /* Column Third */
+    .col-1-3 {
+        width: 33.3333%;
+    }
+    .col-1-2 {
+        width: 50%;
+    }
 }
 
 @media (min-width: 48em) {
-  .pull-right-sm {
-    float:right;
-  }
+    .pull-right-sm {
+        float: right;
+    }
 }
 
-@media only screen and (max-width : 47.9375em) {
-  .remove-gutter-xs {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+@media only screen and (max-width: 47.9375em) {
+    .remove-gutter-xs {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 
@@ -116,26 +132,30 @@ li{
 Modules
 ****************************
 ***************************/
+
+
 /*Header Modules*/
 
-p{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-float: left;
-background-color: transparent;
-margin: 5px 10px;
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    float: left;
+    background-color: transparent;
+    margin: 5px 10px;
 }
 
 .header-primary {
-text-align: center;
-padding-top: 10px;
-padding-bottom: 0px;
-background-color: transparent;
-margin-left:0%;
-margin-right:0%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color: transparent;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
+
 /*Logo Modules*/
+
 .logo {
     overflow: auto;
     display: inline-block;
@@ -143,7 +163,6 @@ margin-right:0%;
     opacity: 0.8;
     margin: 2px 20px;
     text-align: center;
-    
 }
 
 .logo-primary img {
@@ -154,144 +173,153 @@ margin-right:0%;
     margin-bottom: 20px;
 }
 
+
 /*Navigation Modules*/
 
-.nav > li {
-  vertical-align: middle;
-  list-style: none;
-  text-decoration: none;
-  text-align: left;
-  float: left;
+.nav>li {
+    vertical-align: middle;
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    float: left;
 }
 
-.nav > ul {
+.nav>ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
 
 .nav-primary {
-margin-top: 5px;
-font-size: 1.2em;
-position: relative;
-background-color: transparent;
+    margin-top: 5px;
+    font-size: 1.2em;
+    position: relative;
+    background-color: transparent;
 }
 
-.Neil-Keown{
-font-size: 16px;
-color: silver;
-margin-top: 0.1em;
-font-family: 'Cinzel', serif;
-background-color: transparent;
-text-decoration: none;
-display: block;
+.Neil-Keown {
+    font-size: 16px;
+    color: silver;
+    margin-top: 0.1em;
+    font-family: 'Cinzel', serif;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
 }
 
-.btn-head{
-text-align: center;
-font-size: 1.8em !important;
-color: #daa530;
-margin-top: 0.1em;
-font-family: 'Cinzel', serif;
-background-color: transparent;
-text-decoration: none;
-margin: 15px 5px;
-display: block;
+.btn-head {
+    text-align: center;
+    font-size: 1.8em !important;
+    color: #daa530;
+    margin-top: 0.1em;
+    font-family: 'Cinzel', serif;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 15px 5px;
+    display: block;
 }
 
- 
+
 /*Button Modules*/
+
 .btn {
-width: 200px;
-list-style: none;
-display: inline-block;
-text-align: center;
-white-space: nowrap;
-vertical-align: middle;
-cursor: pointer;
-text-decoration: none;
-padding: 10px 10px;
-font-size: 16px;;
-font-weight: bold;
-transition: all 0.1s ease 0s;
-margin: 5px 50px;
-background-color: transparent;
-color: silver;
-outline: 1.5px solid silver;
-border-radius: 100px 100px;
+    width: 200px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    ;
+    font-weight: bold;
+    transition: all 0.1s ease 0s;
+    margin: 5px 50px;
+    background-color: transparent;
+    color: silver;
+    outline: 1.5px solid silver;
+    border-radius: 100px 100px;
 }
 
 
 /************button hover****************/
 
+
 /**Heading**/
-.btn-head:hover{
-  background-color: transparent;
-  border-color: transparent;
+
+.btn-head:hover {
+    background-color: transparent;
+    border-color: transparent;
 }
 
+
 /**Nav buttons top**/
+
 .btn:hover {
-  background-color: aquamarine;
-  color:black ;
-  border-color: transparent;
+    background-color: aquamarine;
+    color: black;
+    border-color: transparent;
 }
+
 
 /***** FONT AWESOME - NAV *****/
 
-a.btn:before{ 
-   font-family: FontAwesome;
-   display: inline-block;
-   vertical-align: middle;
-   padding-right: 10px;
-   padding-bottom: 5px;
-   margin: 1px;
-   text-decoration: none;
-   font-size: 1.5em;
+a.btn:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin: 1px;
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
-a.btn-call-now:before{ 
-   font-family: FontAwesome;
-   content: "\f098";
-   color:#8DC63F;
-}
-   
-a.btn-map:before{ 
-   font-family: FontAwesome;
-   content: "\f041";
-   color:pink;
+a.btn-call-now:before {
+    font-family: FontAwesome;
+    content: "\f098";
+    color: #8DC63F;
 }
 
-a.btn-gallery:before{ 
-   font-family: FontAwesome;
-   content: "\f083";
-   color: silver;
+a.btn-map:before {
+    font-family: FontAwesome;
+    content: "\f041";
+    color: pink;
 }
 
-a.btn-home:before{ 
-   font-family: FontAwesome;
-   content: "\f015";
-   color: red;
+a.btn-gallery:before {
+    font-family: FontAwesome;
+    content: "\f083";
+    color: silver;
+}
+
+a.btn-home:before {
+    font-family: FontAwesome;
+    content: "\f015";
+    color: red;
 }
 
 
 /*Background Modules*/
 
 .bg-img {
-   height: 300px;
-   width: 100%;
-   overflow: hidden;
-   position: relative;
-   border-style: solid;
-   border-width: 0px;
-   float: left;
-   background-repeat: round;
-   text-align: center;
-   margin-bottom: 20px;
-   margin-left: 0px;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-style: solid;
+    border-width: 0px;
+    float: left;
+    background-repeat: round;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
 }
-.bg-img > img {
-   /*position: absolute;*/
+
+.bg-img>img {
+    /*position: absolute;*/
     top: -9999px;
     bottom: -9999px;
     left: -9999px;
@@ -300,68 +328,75 @@ a.btn-home:before{
     min-width: 100%;
 }
 
+
 /***************|||||||||||||||||||||||||||||||||||||||
 *******************************************************
 hero-title
 *******************************************************
 //////////////////////////////////////////////////////*/
 
-
-.stars{
-   display: inline-block;
-   vertical-align: middle;
-   color: antiquewhite;
+.stars {
+    display: inline-block;
+    vertical-align: middle;
+    color: antiquewhite;
 }
 
-.test-align{
-  float:left;
-  margin: 10px;
-  padding: none;
+.test-align {
+    float: left;
+    margin: 10px;
+    padding: none;
 }
 
-.sources{
- color:goldenrod;
+.sources {
+    color: goldenrod;
 }
 
-.headings{
-  margin-bottom: 0px;
-  margin-top: 30px;
-  font-weight: none;
-  text-align: center;
+.headings {
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-weight: none;
+    text-align: center;
 }
+
 
 /*Media Object Module*/
-.media, .media-body {
-overflow:hidden;
-font-weight: bold;
-text-decoration: none;
 
+.media,
+.media-body {
+    overflow: hidden;
+    font-weight: bold;
+    text-decoration: none;
 }
-.media-item i{
-color: white;
-font-size: 30px;
-padding: 5px;
-display: inline-block;
-opacity: 0.8;
-margin-left: 10%;
-margin-bottom: 0px;
-margin-top: 10px;
-text-align: center;
-text-decoration: none;
+
+.media-item i {
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    display: inline-block;
+    opacity: 0.8;
+    margin-left: 7%;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
 }
-a{
-text-decoration: none !important;
-border: transparent !important;
+
+a {
+    text-decoration: none !important;
+    border: transparent !important;
 }
+
 
 /*******FOOTER*********/
-footer{
-background-color: #000;
-color: #daa530;
-font-family: Arial, Helvetica, sans-serif;
-margin-top: 10px;
-text-align: center;
+
+footer {
+    background-color: #000;
+    color: #daa530;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    text-align: center;
 }
+
 
 /******************
 @@@@@@@@@@@@@@@@@@@@@
@@ -378,28 +413,31 @@ MEDIA (for big screens)
 .media.media.media
 @@@@@@@@@@@@@@@@@@@@*/
 
+
 /*@@@@@@@@@@@@@@@@@@@@@@@@@
 BUTTONS
 BUTTONS
 @@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-@media (min-width: 580px){
-  .btn-head{
-    font-size: 40px;
-    display: block;
-    margin: 30px;
-    margin-top: 1px;
-    padding: none;
-  }
+
+@media (min-width: 580px) {
+    .btn-head {
+        font-size: 40px;
+        display: block;
+        margin: 30px;
+        margin-top: 1px;
+        padding: none;
+    }
 }
 
 @media (min-width: 48em) {
-  .btn {
-  width: 400px;
-  font-size: 20px;
-  stroke: 1px #ffffff;
-  margin-right: 40px;
-  }
+    .btn {
+        width: 400px;
+        font-size: 20px;
+        stroke: 1px #ffffff;
+        margin-right: 40px;
+    }
 }
+
 
 /*\\\\\\\\\\\\\\\\\\\\\\\
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -408,89 +446,93 @@ NAV > list > ul
 /////////////////////////*/
 
 @media (min-width: 480px) {
-.nav > li {
-  list-style: none;
-  text-decoration: none;
-  text-align: center;
-  margin: auto;
-  display: inline;
-  }
+    .nav>li {
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+        display: inline;
+    }
 }
 
-@media (min-width: 480px){
-.nav-primary {
-    text-align: center;
-    display: inline;
- }
+@media (min-width: 480px) {
+    .nav-primary {
+        text-align: center;
+        display: inline;
+    }
 }
+
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 center image "bg-img"
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 @media only screen and (min-width: 600.1px) {
-  .bg-img{
-    margin-top: 30px;
-    height: 500px;
-    width: 70%;
-    border-radius: 50%;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-repeat: round;
+    .bg-img {
+        margin-top: 30px;
+        height: 500px;
+        width: 70%;
+        border-radius: 50%;
+        margin-left: 15%;
+        margin-right: 15%;
+        background-repeat: round;
+    }
 }
- }
 
 @media only screen and (max-width:600px) {
-  .bg-img{
-    margin-top: 30px;
-    height: 500px;
-    width: 100%;
-    float: left;
-    margin-left: none;
-    background-repeat: round;
-    
+    .bg-img {
+        margin-top: 30px;
+        height: 500px;
+        width: 100%;
+        float: left;
+        margin-left: none;
+        background-repeat: round;
+    }
 }
-  }
 
 @media only screen and (max-width:480px) {
-  .bg-img{
-    margin-top: 20px;
-    height: 300px;
-    width: 100%;
-    float: left;
-    margin-left: 0px;
-    background-repeat: round;
-    z-index: 0;
-    position: relative;
-    overflow: hidden;
-    
+    .bg-img {
+        margin-top: 20px;
+        height: 300px;
+        width: 100%;
+        float: left;
+        margin-left: 0px;
+        background-repeat: round;
+        z-index: 0;
+        position: relative;
+        overflow: hidden;
+    }
 }
-  }
 
-  /********************************
+
+/********************************
   @@@@@@@@@@@@@@@
   LOGO FOOTER MEDIA QUERY!!!!!!!!!!
   @@@@@@@@@@@@@@@@@@
   **********************************/
-  
 
-@media only screen and (min-width: 480px){
-  .media-item i{
-    margin-left: 10%;
-    font-size: 70px;
-  }
-}  
+@media only screen and (min-height: 1365) and (min-width: 1023px) {
+    .media-item i {
+        margin-left: 0px;
+        font-size: 10px;
+    }
+}
 
-@media only screen and (min-width: 850px){
-  .media-item i{
-    margin-left: 12.5%;
-    font-size: 110px;
-  }
-}  
- 
+@media only screen and (min-width: 480px) {
+    .media-item i {
+        margin-left: 8%;
+        font-size: 70px;
+    }
+}
 
-
-
+@media only screen and (min-width: 850px) {
+    .media-item i {
+        margin-left: 10%;
+        font-size: 110px;
+    }
+}
 
 
 /***************************
@@ -500,93 +542,100 @@ GALLERY========GALLERY=====GALLERY=====GALLERY========GALLERY
 ***************************/
 
 .wrap {
-   overflow: hidden;
-   margin: 0px;
+    overflow: hidden;
+    margin: 0px;
 }
+
 .box {
-   float: left;
-   position: relative;
-   width: 33%;
-   padding-bottom: 33%;
+    float: left;
+    position: relative;
+    width: 33%;
+    padding-bottom: 33%;
 }
+
 .boxInner {
-   position: absolute;
-   left: 10px;
-   right: 10px;
-   top: 10px;
-   bottom: 10px;
-   overflow: hidden;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
 }
+
 .boxInner img {
-   width: 100%;
+    width: 100%;
 }
+
 .boxInner .titleBox {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   margin-bottom: -50px;
-   background: #000;
-   background: rgba(0, 0, 0, 0.5);
-   color: #FFF;
-   padding: 0px;
-   text-align: center;
-   -webkit-transition: all 0.3s ease-out;
-   -moz-transition: all 0.3s ease-out;
-   -o-transition: all 0.3s ease-out;
-   transition: all 0.3s ease-out;
-}
-body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
-   margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -50px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 0px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
-@media only screen and (max-width : 600px) {
-.gallery-img{
-width: 400px;
-height: 100%;
-margin-top: -60px;
-   }
-}
-@media only screen and (max-width : 480px) {
-.gallery-img{
-width: 300px;
-height: 100%;
-margin-top: -60px;
-   }
+body.no-touch .boxInner:hover .titleBox,
+body.touch .boxInner.touchFocus .titleBox {
+    margin-bottom: 0;
 }
 
-@media only screen and (max-width : 480px) {
-   /* Smartphone view: 1 tile */
-   .box {
-      width: 100%;
-      padding-bottom: 100%;
-      margin-top: -10px;
-   }
-}
-@media only screen and (max-width : 650px) and (min-width : 481px) {
-   /* Tablet view: 2 tiles */
-   .box {
-      width: 50%;
-      padding-bottom: 50%;
-      margin-top: -10px;
-   }
-}
-@media only screen and (max-width : 1050px) and (min-width : 651px) {
-   /* Small desktop / ipad view: 3 tiles */
-   .box {
-      width: 33.3%;
-      padding-bottom: 33.3%;
-      margin-top: -10px;
-   }
-}
-@media only screen and (max-width : 1290px) and (min-width : 1051px) {
-   /* Medium desktop: 4 tiles */
-   .box {
-      width: 25%;
-      padding-bottom: 25%;
-      margin-top: -10px;
-   }
+@media only screen and (max-width: 600px) {
+    .gallery-img {
+        width: 400px;
+        height: 100%;
+        margin-top: -60px;
+    }
 }
 
+@media only screen and (max-width: 480px) {
+    .gallery-img {
+        width: 300px;
+        height: 100%;
+        margin-top: -60px;
+    }
+}
 
+@media only screen and (max-width: 480px) {
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 100%;
+        padding-bottom: 100%;
+        margin-top: -10px;
+    }
+}
 
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+    /* Medium desktop: 4 tiles */
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+        margin-top: -10px;
+    }
+}

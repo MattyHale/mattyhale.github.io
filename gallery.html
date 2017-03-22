@@ -189,7 +189,13 @@
         </div>
     </section>
     <footer>
-        Location: Level 1, 9-13 William Street Gosford, NSW 2250 || PH: 0431153203 || Email: gosfordjewellers@gmail.com
+        Location: Level 1, 9-13 William Street Gosford, NSW 2250 || PH: 0431153203 ||
+        <script>
+            var username = "gosfordjewellers";
+            var hostname = "gmail.com";
+            var linktext = username + "@" + hostname;
+            document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "' id=footer-mailto>" + linktext + "</a>");
+        </script>
     </footer>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
