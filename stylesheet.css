@@ -223,7 +223,8 @@ p {
 /*Button Modules*/
 
 .btn {
-    width: 200px;
+    width: 150px;
+    height: 60px;
     list-style: none;
     display: inline-block;
     text-align: center;
@@ -233,14 +234,13 @@ p {
     text-decoration: none;
     padding: 10px 10px;
     font-size: 16px;
-    ;
     font-weight: bold;
     transition: all 0.1s ease 0s;
     margin: 5px 50px;
     background-color: transparent;
     color: silver;
-    outline: 1.5px solid silver;
-    border-radius: 100px 100px;
+    /*outline: 0.3px solid antiquewhite;*/
+    background-color: #003;
 }
 
 
@@ -259,7 +259,7 @@ p {
 
 .btn:hover {
     background-color: aquamarine;
-    color: black;
+    color: #003;
     border-color: transparent;
 }
 
@@ -436,7 +436,7 @@ BUTTONS
 
 @media (min-width: 48em) {
     .btn {
-        width: 400px;
+        width: 200px;
         font-size: 20px;
         stroke: 1px #ffffff;
         margin-right: 40px;
