@@ -241,6 +241,7 @@ p {
     color: silver;
     /*outline: 0.3px solid antiquewhite;*/
     background-color: #003;
+    border-radius: 15px 15px 15px 15px;
 }
 
 
