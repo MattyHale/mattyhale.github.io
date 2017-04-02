@@ -32,11 +32,11 @@ html,
 body {
     background-color: black;
     background: no-repeat center center fixed;
-    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#003));
-    background: -webkit-linear-gradient(top, #000, #003);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#002));
+    background: -webkit-linear-gradient(top, #000, #002);
     background: -moz-linear-gradient(top, #000, end-color);
-    background: linear-gradient(to bottom, #000, #003);
-    background: linear-gradient(to bottom, #000, #003);
+    background: linear-gradient(to bottom, #000, #002);
+    background: linear-gradient(to bottom, #000, #002);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -141,7 +141,7 @@ p {
     font-size: 16px;
     float: left;
     background-color: transparent;
-    margin: 5px 10px;
+    margin: 0px 10px;
 }
 
 .header-primary {
@@ -239,8 +239,7 @@ p {
     margin: 5px 50px;
     background-color: transparent;
     color: silver;
-    /*outline: 0.3px solid antiquewhite;*/
-    background-color: #003;
+    background-color: #000;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -371,7 +370,7 @@ hero-title
 
 .media-item i {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding: 5px;
     display: inline-block;
     opacity: 0.8;
@@ -385,6 +384,8 @@ hero-title
 a {
     text-decoration: none !important;
     border: transparent !important;
+    color: #daa530;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -396,11 +397,6 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     text-align: center;
-}
-
-a {
-    color: #daa530;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -522,7 +518,7 @@ center image "bg-img"
 @media only screen and (min-width: 480px) {
     .media-item i {
         margin-left: 8%;
-        font-size: 70px;
+        font-size: 50px;
     }
 }
 
