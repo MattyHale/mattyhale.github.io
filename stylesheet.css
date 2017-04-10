@@ -500,7 +500,7 @@ body.touch .boxInner.touchFocus .titleBox {
     .gallery-img {
         width: 300px;
         height: 100%;
-        margin-top: 0px
+        margin-top: 0px;
     }
     .box {
         height: 100%;
