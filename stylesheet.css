@@ -541,8 +541,8 @@ body.touch .boxInner.touchFocus .titleBox {
     width: 100%;
     font: bold 16px sans-serif;
     text-align: left;
-    padding: 50px 0px 0px 0px;
-    margin-top: 80px;
+    padding: 50px 40px 40px 40px;
+    margin-top: 30px;
     overflow: hidden;
 }
 
@@ -601,7 +601,7 @@ body.touch .boxInner.touchFocus .titleBox {
     box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
     border: none;
     resize: none;
-    font: inherit;
+    font: arial;
     font-size: 14px;
     font-weight: normal;
     color: #d1d2d2;
