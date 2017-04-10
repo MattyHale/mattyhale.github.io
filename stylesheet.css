@@ -460,13 +460,13 @@ a {
     position: absolute;
     left: 10px;
     right: 10px;
-    top: 10px;
+    top: 0px;
     bottom: 10px;
     overflow: hidden
 }
 
 .boxInner img {
-    width: 100%
+    width: 100%;
 }
 
 .boxInner .titleBox {
@@ -480,7 +480,7 @@ a {
     color: #FFF;
     padding: 0;
     text-align: center;
-    transition: all .3s ease-out
+    transition: all .3s ease-out;
 }
 
 body.no-touch .boxInner:hover .titleBox,
@@ -500,12 +500,13 @@ body.touch .boxInner.touchFocus .titleBox {
     .gallery-img {
         width: 300px;
         height: 100%;
-        margin-top: -60px
+        margin-top: 0px
     }
     .box {
+        height: 100%;
         width: 100%;
         padding-bottom: 100%;
-        margin-top: -10px
+        margin-top: -30px
     }
 }
 
