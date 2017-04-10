@@ -1,63 +1,31 @@
-/***************************
-****************************
-Reset
-****************************
-***************************/
-
-@import 'normalize.css';
-
-/* Change all elements to use border-box */
-
+@import "normalize.css";
 html {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 *,
-*:before,
-*:after {
-    box-sizing: inherit;
+:before,
+:after {
+    box-sizing: inherit
 }
-
-
-/***************************
-****************************
-Layout Styles
-****************************
-***************************/
-
-
-/* Content Container*/
 
 html,
 body {
-    background-color: black;
+    background-color: #000;
     background: no-repeat center center fixed;
     background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#002));
     background: -webkit-linear-gradient(top, #000, #002);
     background: -moz-linear-gradient(top, #000, end-color);
     background: linear-gradient(to bottom, #000, #002);
-    background: linear-gradient(to bottom, #000, #002);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     font-family: 'Cinzel', serif;
-    color: antiquewhite;
-    font-weight: none;
-}
-
-li {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.services {
-    text-align: left !important;
-    margin-left: 10px !important;
+    color: #faebd7;
+    font-weight: none
 }
 
 .container {
@@ -66,102 +34,150 @@ li {
     margin-right: auto;
     margin-left: auto;
     max-width: 1170px;
-    background-color: transparent;
+    background-color: transparent
 }
-
-
-/* Row */
 
 .row {
     margin-top: 5px;
     margin-right: 15px;
-    margin-left: 15px;
+    margin-left: 15px
 }
-
-
-/* Row Clear Float*/
 
 .row:after {
     content: "";
     display: table;
-    clear: both;
+    clear: both
 }
-
-
-/* Media Query excludes extra small devices and includes small and above */
 
 [class*='col-'] {
     width: 100%;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px
 }
 
 @media (min-width: 48em) {
     [class*='col-'] {
-        float: left;
+        float: left
     }
-    /* Column Two Thirds */
     .col-2-3 {
-        width: 66.6666%;
+        width: 66.6666%
     }
-    /* Column Third */
     .col-1-3 {
-        width: 33.3333%;
+        width: 33.3333%
     }
     .col-1-2 {
-        width: 50%;
+        width: 50%
     }
-}
-
-@media (min-width: 48em) {
     .pull-right-sm {
-        float: right;
+        float: right
     }
 }
 
 @media only screen and (max-width: 47.9375em) {
     .remove-gutter-xs {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 0;
+        padding-right: 0
     }
 }
 
 
-/***************************
-****************************
-Modules
-****************************
-***************************/
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: black;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
 
 
-/*Header Modules*/
+/* The navigation menu links */
 
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: antiquewhite;
+    text-shadow: 1px 1px 1px gold;
+    display: block;
+    transition: 0.3s
+}
+
+#top {
+    font-size: 30px;
+    color: silver;
+    margin: 0px;
+    position: absolute;
+    z-index: 3;
+    background-color: #002;
+    width: 100%;
+    height: 40px;
     float: left;
-    background-color: transparent;
-    margin: 0px 10px;
 }
 
-.header-primary {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    background-color: transparent;
-    margin-left: 0%;
-    margin-right: 0%;
+#top:before {
+    font-family: FontAwesome;
+    content: '\f03a';
+    color: black;
+    text-shadow: 2px 2px 2px #daa520;
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 
-/*Logo Modules*/
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #daa520;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px gold;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
 
 .logo {
     overflow: auto;
     display: inline-block;
-    color: white;
-    opacity: 0.8;
-    margin: 2px 20px;
+    color: #fff;
+    opacity: .8;
+    margin: 50px 20px 0px 20px;
     text-align: center;
 }
 
@@ -170,282 +186,50 @@ p {
     width: 100%;
     margin-top: none;
     padding: none;
-    margin-bottom: 20px;
+    margin-bottom: 0px
 }
 
-
-/*Navigation Modules*/
+li {
+    font-family: Arial, Helvetica, sans-serif
+}
 
 .nav>li {
     vertical-align: middle;
     list-style: none;
     text-decoration: none;
     text-align: left;
+    float: left
+}
+
+p {
     float: left;
+    background-color: transparent;
+    margin: 0 10px;
+    font: 16px sans-serif;
+}
+
+.header-primary {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0;
+    background-color: transparent;
+    margin-left: 0;
+    margin-right: 0
 }
 
 .nav>ul {
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0
 }
 
 .nav-primary {
-    margin-top: 5px;
     font-size: 1.2em;
     position: relative;
     background-color: transparent;
-}
-
-.Neil-Keown {
-    font-size: 16px;
-    color: silver;
-    margin-top: 0.1em;
-    font-family: 'Cinzel', serif;
-    background-color: transparent;
-    text-decoration: none;
-    display: block;
-}
-
-.btn-head {
     text-align: center;
-    font-size: 1.8em !important;
-    color: #daa530;
-    margin-top: 0.1em;
-    font-family: 'Cinzel', serif;
-    background-color: transparent;
-    text-decoration: none;
-    margin: 15px 5px;
-    display: block;
+    display: inline
 }
-
-
-/*Button Modules*/
-
-.btn {
-    width: 150px;
-    height: 60px;
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.1s ease 0s;
-    margin: 5px 50px;
-    background-color: transparent;
-    color: silver;
-    background-color: #000;
-    border-radius: 15px 15px 15px 15px;
-}
-
-
-/************button hover****************/
-
-
-/**Heading**/
-
-.btn-head:hover {
-    background-color: transparent;
-    border-color: transparent;
-}
-
-
-/**Nav buttons top**/
-
-.btn:hover {
-    background-color: aquamarine;
-    color: #003;
-    border-color: transparent;
-}
-
-
-/***** FONT AWESOME - NAV *****/
-
-a.btn:before {
-    font-family: FontAwesome;
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    margin: 1px;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-a.btn-call-now:before {
-    font-family: FontAwesome;
-    content: "\f098";
-    color: #8DC63F;
-}
-
-a.btn-map:before {
-    font-family: FontAwesome;
-    content: "\f041";
-    color: pink;
-}
-
-a.btn-gallery:before {
-    font-family: FontAwesome;
-    content: "\f083";
-    color: silver;
-}
-
-a.btn-home:before {
-    font-family: FontAwesome;
-    content: "\f015";
-    color: red;
-}
-
-
-/*Background Modules*/
-
-.bg-img {
-    height: 300px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    border-style: solid;
-    border-width: 0px;
-    float: left;
-    background-repeat: round;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: 0px;
-}
-
-.bg-img>img {
-    /*position: absolute;*/
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-    margin: auto;
-    min-width: 100%;
-}
-
-
-/***************|||||||||||||||||||||||||||||||||||||||
-*******************************************************
-hero-title
-*******************************************************
-//////////////////////////////////////////////////////*/
-
-.stars {
-    display: inline-block;
-    vertical-align: middle;
-    color: antiquewhite;
-}
-
-.test-align {
-    float: left;
-    margin: 10px;
-    padding: none;
-}
-
-.sources {
-    color: goldenrod;
-}
-
-.headings {
-    margin-bottom: 0px;
-    margin-top: 30px;
-    font-weight: none;
-    text-align: center;
-}
-
-
-/*Media Object Module*/
-
-.media,
-.media-body {
-    overflow: hidden;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.media-item i {
-    color: white;
-    font-size: 20px;
-    padding: 5px;
-    display: inline-block;
-    opacity: 0.8;
-    margin-left: 7%;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    text-align: center;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none !important;
-    border: transparent !important;
-    color: #daa530;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/*******FOOTER*********/
-
-footer {
-    background-color: #000;
-    color: #daa530;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    text-align: center;
-}
-
-
-/******************
-@@@@@@@@@@@@@@@@@@@@@
-
-MEDIA (for big screens)
-
-========================= Gallery (pg.2) Bellow index Media queries!!!!
-
-@@@@@@@@@@@@@@@@@@@@
-********************
-@media @media @media.
-.media.media.media
-.media.media.media
-.media.media.media
-@@@@@@@@@@@@@@@@@@@@*/
-
-
-/*@@@@@@@@@@@@@@@@@@@@@@@@@
-BUTTONS
-BUTTONS
-@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
-@media (min-width: 580px) {
-    .btn-head {
-        font-size: 40px;
-        display: block;
-        margin: 30px;
-        margin-top: 1px;
-        padding: none;
-    }
-}
-
-@media (min-width: 48em) {
-    .btn {
-        width: 200px;
-        font-size: 20px;
-        stroke: 1px #ffffff;
-        margin-right: 40px;
-    }
-}
-
-
-/*\\\\\\\\\\\\\\\\\\\\\\\
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-NAV > list > ul
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-/////////////////////////*/
 
 @media (min-width: 480px) {
     .nav>li {
@@ -453,23 +237,133 @@ NAV > list > ul
         text-decoration: none;
         text-align: center;
         margin: auto;
-        display: inline;
+        display: inline
     }
 }
 
-@media (min-width: 480px) {
-    .nav-primary {
-        text-align: center;
-        display: inline;
+.Neil-Keown {
+    color: silver;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+    font: 16px 'Cinzel', serif
+}
+
+.btn-head {
+    text-align: center;
+    color: #daa530;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 1px 5px;
+    display: block;
+    font: 1.8em 'Cinzel', serif;
+}
+
+@media (min-width: 580px) {
+    .btn-head {
+        font-size: 40px;
+        display: block;
+        margin: 30px;
+        padding: none
     }
 }
 
+.btn {
+    width: 150px;
+    height: 45px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .1s ease 0;
+    margin: 5px 50px 15px;
+    background-color: #001;
+    text-shadow: 0.5px 0.5px 0.5px white;
+    color: silver;
+    border-radius: 8px 8px 8px 8px;
+}
 
-/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-center image "bg-img"
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+@media (min-width: 48em) {
+    .btn {
+        width: 200px;
+        font-size: 20px;
+        margin-right: 40px
+    }
+}
+
+.btn-head:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn:hover {
+    background-color: #7fffd4;
+    color: #003;
+    border-color: transparent;
+}
+
+a.btn:before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin: 1px;
+    text-decoration: none;
+    font: 1.5em FontAwesome;
+}
+
+a.btn-call-now:before {
+    font-family: FontAwesome;
+    content: "\f098";
+    color: green;
+}
+
+a.btn-map:before {
+    font-family: FontAwesome;
+    content: "\f041";
+    color: red;
+}
+
+a.btn-gallery:before {
+    font-family: FontAwesome;
+    content: "\f083";
+    color: black;
+}
+
+a.btn-home:before {
+    font-family: FontAwesome;
+    content: "\f015";
+    color: red
+}
+
+.bg-img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-style: solid;
+    border-width: 0;
+    float: left;
+    background-repeat: round;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.bg-img>img {
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    min-width: 100%
+}
 
 @media only screen and (min-width: 600.1px) {
     .bg-img {
@@ -479,7 +373,7 @@ center image "bg-img"
         border-radius: 50%;
         margin-left: 15%;
         margin-right: 15%;
-        background-repeat: round;
+        background-repeat: round
     }
 }
 
@@ -490,7 +384,7 @@ center image "bg-img"
         width: 100%;
         float: left;
         margin-left: none;
-        background-repeat: round;
+        background-repeat: round
     }
 }
 
@@ -500,52 +394,58 @@ center image "bg-img"
         height: 300px;
         width: 100%;
         float: left;
-        margin-left: 0px;
+        margin-left: 0;
         background-repeat: round;
         z-index: 0;
         position: relative;
-        overflow: hidden;
+        overflow: hidden
     }
 }
 
-
-/********************************
-  @@@@@@@@@@@@@@@
-  LOGO FOOTER MEDIA QUERY!!!!!!!!!!
-  @@@@@@@@@@@@@@@@@@
-  **********************************/
-
-@media only screen and (min-width: 480px) {
-    .media-item i {
-        margin-left: 8%;
-        font-size: 50px;
-    }
+.services {
+    text-align: left!important;
+    margin-left: 10px!important
 }
 
-@media only screen and (min-width: 1024px) {
-    .media-item i {
-        margin-left: 10%;
-        font-size: 110px;
-    }
+.stars {
+    display: inline-block;
+    vertical-align: middle;
+    color: #faebd7
 }
 
+.test-align {
+    float: left;
+    margin: 10px;
+    padding: none
+}
 
-/***************************
-****************************
-GALLERY========GALLERY=====GALLERY=====GALLERY========GALLERY
-****************************
-***************************/
+.sources {
+    color: #daa520
+}
+
+.headings {
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-weight: none;
+    text-align: center
+}
+
+a {
+    text-decoration: none!important;
+    border: transparent!important;
+    color: #daa530;
+}
 
 .wrap {
     overflow: hidden;
-    margin: 0px;
+    margin: 0
 }
 
 .box {
     float: left;
     position: relative;
     width: 33%;
-    padding-bottom: 33%;
+    padding-bottom: 33%
 }
 
 .boxInner {
@@ -554,11 +454,11 @@ GALLERY========GALLERY=====GALLERY=====GALLERY========GALLERY
     right: 10px;
     top: 10px;
     bottom: 10px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .boxInner img {
-    width: 100%;
+    width: 100%
 }
 
 .boxInner .titleBox {
@@ -570,24 +470,21 @@ GALLERY========GALLERY=====GALLERY=====GALLERY========GALLERY
     background: #000;
     background: rgba(0, 0, 0, 0.5);
     color: #FFF;
-    padding: 0px;
+    padding: 0;
     text-align: center;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    transition: all .3s ease-out
 }
 
 body.no-touch .boxInner:hover .titleBox,
 body.touch .boxInner.touchFocus .titleBox {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 @media only screen and (max-width: 600px) {
     .gallery-img {
         width: 400px;
         height: 100%;
-        margin-top: -60px;
+        margin-top: -60px
     }
 }
 
@@ -595,42 +492,187 @@ body.touch .boxInner.touchFocus .titleBox {
     .gallery-img {
         width: 300px;
         height: 100%;
-        margin-top: -60px;
+        margin-top: -60px
     }
-}
-
-@media only screen and (max-width: 480px) {
-    /* Smartphone view: 1 tile */
     .box {
         width: 100%;
         padding-bottom: 100%;
-        margin-top: -10px;
+        margin-top: -10px
     }
 }
 
 @media only screen and (max-width: 650px) and (min-width: 481px) {
-    /* Tablet view: 2 tiles */
     .box {
         width: 50%;
         padding-bottom: 50%;
-        margin-top: -10px;
+        margin-top: -10px
     }
 }
 
 @media only screen and (max-width: 1050px) and (min-width: 651px) {
-    /* Small desktop / ipad view: 3 tiles */
     .box {
-        width: 33.3%;
-        padding-bottom: 33.3%;
-        margin-top: -10px;
+        width: 50%;
+        padding-bottom: 50%;
+        margin-top: -10px
     }
 }
 
 @media only screen and (max-width: 1290px) and (min-width: 1051px) {
-    /* Medium desktop: 4 tiles */
     .box {
-        width: 25%;
-        padding-bottom: 25%;
-        margin-top: -10px;
+        width: 33.3%;
+        padding-bottom: 33.3%;
+        margin-top: -10px
+    }
+}
+
+.footer-distributed {
+    background-color: transparent;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 0px 0px 0px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons {
+    margin-top: 60px;
+    margin-left: 10%;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 25px;
+    color: silver;
+    text-shadow: 2px 1px 1px white;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    float: right;
+}
+
+.footer-distributed .footer-right p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 10px 0px;
+    color: #ffffff;
+}
+
+
+/* The contact form */
+
+.footer-distributed form {
+    display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #d1d2d2;
+    width: 400px;
+    padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+    color: #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+    color: #5c666b;
+    opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder {
+    color: #5c666b;
+}
+
+.footer-distributed form input {
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.footer-distributed form textarea {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-distributed form button {
+    border-radius: 3px;
+    background-color: #000;
+    color: silver;
+    border: 0;
+    padding: 15px 50px;
+    font-weight: bold;
+    float: right;
+}
+
+@media (max-width: 1000px) {
+    .footer-distributed {
+        font: bold 14px 'Cinzel';
+    }
+    .footer-distributed form input,
+    .footer-distributed form textarea {
+        width: 250px;
+    }
+    .footer-distributed form button {
+        padding: 10px 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-distributed {
+        padding: 30px;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        float: none;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .footer-distributed .footer-left {
+        margin-bottom: 40px;
+    }
+    .footer-distributed form {
+        margin-top: 30px;
+        display: block;
+    }
+    .footer-distributed form button {
+        float: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .footer-distributed .footer-icons a {
+        font-size: 40px;
+        height: 70px;
+        width: 70px;
+        padding: 15px;
     }
 }
