@@ -139,6 +139,14 @@ body {
     cursor: pointer;
 }
 
+.menuDown:after {
+    font-family: FontAwesome;
+    content: '\f219';
+    padding-left: 10px;
+    color: white;
+    font-size: 15px;
+}
+
 
 /* When you mouse over the navigation links, change their color */
 
