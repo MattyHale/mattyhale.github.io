@@ -550,7 +550,7 @@ body.touch .boxInner.touchFocus .titleBox {
 
 .footer-distributed .footer-icons {
     margin-top: 60px;
-    margin-left: 10%;
+    margin-left: 0px;
 }
 
 .footer-distributed .footer-icons a {
