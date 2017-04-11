@@ -180,19 +180,7 @@
             </div>
         </section>
 
-        <script>
-            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-            }
 
-            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";
-            }
-        </script>
     </div>
 
     <footer class="footer-distributed">
@@ -212,7 +200,7 @@
 
                 <textarea name="body" placeholder="Message"></textarea>
                 <br>
-                <input type="submit" value="Send" />
+                <input id="submit" type="submit" value="Send" />
             </form>
         </div>
         <div class="footer-icons">
@@ -228,38 +216,20 @@
 
 
     </footer>
-
-
     <script>
-        var form = document.getElementsByTagName('form')[0];
-        form.addEventListener('submit', contact, false);
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
 
-        function contact(e) {
-            // Prevent Default Form Submission
-            e.preventDefault();
-
-            var target = e.target || e.srcElement;
-            var i = 0;
-            var message = '';
-
-            // Loop Through All Input Fields
-            for (i = 0; i < target.length; ++i) {
-                // Check to make sure it's a value. Don't need to include Buttons
-                if (target[i].type != 'text' && target[i].type != 'textarea') {
-                    // Skip to next input since this one doesn't match our rules
-                    continue;
-                }
-
-                // Add Input Name and value followed by a line break
-                message += target[i].name + ': ' + target[i].value + "\r\n";
-            }
-            // Modify the hidden body input field that is required for the mailto: scheme
-            target.elements["body"].value = message;
-
-            // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
-            this.submit();
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
         }
     </script>
+
 
 </body>
 
