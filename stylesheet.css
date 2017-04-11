@@ -1,680 +1,670 @@
-                                                                                    @import "normalize.css";
-                                                                            html {
-                                                                                box-sizing: border-box
-                                                                            }
-                                                                            
-                                                                            *,
-                                                                             :before,
-                                                                             :after {
-                                                                                box-sizing: inherit
-                                                                            }
-                                                                            
-                                                                            html,
-                                                                            body {
-                                                                                background-color: #000;
-                                                                                background: no-repeat center center fixed;
-                                                                                background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#002));
-                                                                                background: -webkit-linear-gradient(top, #000, #002);
-                                                                                background: -moz-linear-gradient(top, #000, end-color);
-                                                                                background: linear-gradient(to bottom, #000, #002);
-                                                                                background-size: cover;
-                                                                                width: 100%;
-                                                                                height: 100%;
-                                                                                margin: 0;
-                                                                                padding: 0;
-                                                                                overflow-x: hidden;
-                                                                                font-family: 'Cinzel', serif;
-                                                                                color: #faebd7;
-                                                                                font-weight: none
-                                                                            }
-                                                                            
-                                                                            .container {
-                                                                                padding-right: auto;
-                                                                                padding-left: auto;
-                                                                                margin-right: auto;
-                                                                                margin-left: auto;
-                                                                                max-width: 1170px;
-                                                                                background-color: transparent
-                                                                            }
-                                                                            
-                                                                            .row {
-                                                                                margin-top: 5px;
-                                                                                margin-right: 15px;
-                                                                                margin-left: 15px
-                                                                            }
-                                                                            
-                                                                            .row:after {
-                                                                                content: "";
-                                                                                display: table;
-                                                                                clear: both
-                                                                            }
-                                                                            
-                                                                            [class*='col-'] {
-                                                                                width: 100%;
-                                                                                padding-left: 15px;
-                                                                                padding-right: 15px
-                                                                            }
-                                                                            
-                                                                            @media (min-width: 48em) {
-                                                                                [class*='col-'] {
-                                                                                    float: left
-                                                                                }
-                                                                                .col-2-3 {
-                                                                                    width: 66.6666%
-                                                                                }
-                                                                                .col-1-3 {
-                                                                                    width: 33.3333%
-                                                                                }
-                                                                                .col-1-2 {
-                                                                                    width: 50%
-                                                                                }
-                                                                                .pull-right-sm {
-                                                                                    float: right
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media only screen and (max-width: 47.9375em) {
-                                                                                .remove-gutter-xs {
-                                                                                    padding-left: 0;
-                                                                                    padding-right: 0
-                                                                                }
-                                                                            }
-                                                                            /* The side navigation menu */
-                                                                            
-                                                                            .sidenav {
-                                                                                height: 100%;
-                                                                                /* 100% Full-height */
-                                                                                width: 0;
-                                                                                /* 0 width - change this with JavaScript */
-                                                                                position: fixed;
-                                                                                /* Stay in place */
-                                                                                z-index: 1;
-                                                                                /* Stay on top */
-                                                                                top: 0;
-                                                                                left: 0;
-                                                                                background-color: black;
-                                                                                /* Black*/
-                                                                                overflow-x: hidden;
-                                                                                /* Disable horizontal scroll */
-                                                                                padding-top: 60px;
-                                                                                /* Place content 60px from the top */
-                                                                                transition: 0.5s;
-                                                                                /* 0.5 second transition effect to slide in the sidenav */
-                                                                            }
-                                                                            /* The navigation menu links */
-                                                                            
-                                                                            .sidenav a {
-                                                                                padding: 8px 8px 8px 32px;
-                                                                                text-decoration: none;
-                                                                                font-size: 20px;
-                                                                                color: antiquewhite;
-                                                                                text-shadow: 1px 1px 1px gold;
-                                                                                display: block;
-                                                                                transition: 0.3s
-                                                                            }
-                                                                            
-                                                                            #top {
-                                                                                font-size: 30px;
-                                                                                color: silver;
-                                                                                margin: 0px;
-                                                                                position: absolute;
-                                                                                z-index: 3;
-                                                                                background-color: #002;
-                                                                                width: 100%;
-                                                                                height: 40px;
-                                                                                float: left;
-                                                                            }
-                                                                            
-                                                                            #top:before {
-                                                                                font-family: FontAwesome;
-                                                                                content: '\f03a';
-                                                                                color: black;
-                                                                                text-shadow: 2px 2px 2px #daa520;
-                                                                                font-size: 30px;
-                                                                                margin-right: 10px;
-                                                                                cursor: pointer;
-                                                                            }
-                                                                            
-                                                                            .menuDown:after {
-                                                                                font-family: FontAwesome;
-                                                                                content: '\f219';
-                                                                                padding-left: 10px;
-                                                                                color: white;
-                                                                                font-size: 15px;
-                                                                            }
-                                                                            /* When you mouse over the navigation links, change their color */
-                                                                            
-                                                                            .sidenav a:hover,
-                                                                            .offcanvas a:focus {
-                                                                                color: #daa520;
-                                                                            }
-                                                                            /* Position and style the close button (top right corner) */
-                                                                            
-                                                                            .sidenav .closebtn {
-                                                                                position: absolute;
-                                                                                top: 0;
-                                                                                right: 5px;
-                                                                                font-size: 36px;
-                                                                                margin-left: 10px;
-                                                                                margin-top: 20px;
-                                                                                text-shadow: 1px 1px 1px gold;
-                                                                            }
-                                                                            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-                                                                            
-                                                                            @media screen and (max-height: 450px) {
-                                                                                .sidenav {
-                                                                                    padding-top: 15px;
-                                                                                }
-                                                                                .sidenav a {
-                                                                                    font-size: 18px;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            .logo {
-                                                                                overflow: auto;
-                                                                                display: inline-block;
-                                                                                color: #fff;
-                                                                                opacity: .8;
-                                                                                margin: 50px 20px 0px 20px;
-                                                                                text-align: center;
-                                                                            }
-                                                                            
-                                                                            .logo-primary img {
-                                                                                height: 100%;
-                                                                                width: 100%;
-                                                                                margin-top: none;
-                                                                                padding: none;
-                                                                                margin-bottom: 0px
-                                                                            }
-                                                                            
-                                                                            li {
-                                                                                font-family: Arial, Helvetica, sans-serif
-                                                                            }
-                                                                            
-                                                                            .nav>li {
-                                                                                vertical-align: middle;
-                                                                                list-style: none;
-                                                                                text-decoration: none;
-                                                                                text-align: left;
-                                                                                float: left
-                                                                            }
-                                                                            
-                                                                            p {
-                                                                                float: left;
-                                                                                background-color: transparent;
-                                                                                margin: 0 10px;
-                                                                                font: 16px sans-serif;
-                                                                            }
-                                                                            
-                                                                            .header-primary {
-                                                                                text-align: center;
-                                                                                padding-top: 0px;
-                                                                                padding-bottom: 0;
-                                                                                background-color: transparent;
-                                                                                margin-left: 0;
-                                                                                margin-right: 0
-                                                                            }
-                                                                            
-                                                                            .nav>ul {
-                                                                                list-style: none;
-                                                                                padding: 0;
-                                                                                margin: 0
-                                                                            }
-                                                                            
-                                                                            .nav-primary {
-                                                                                font-size: 1.2em;
-                                                                                position: relative;
-                                                                                background-color: transparent;
-                                                                                text-align: center;
-                                                                                display: inline
-                                                                            }
-                                                                            
-                                                                            @media (min-width: 480px) {
-                                                                                .nav>li {
-                                                                                    list-style: none;
-                                                                                    text-decoration: none;
-                                                                                    text-align: center;
-                                                                                    margin: auto;
-                                                                                    display: inline
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            .Neil-Keown {
-                                                                                color: silver;
-                                                                                background-color: transparent;
-                                                                                text-decoration: none;
-                                                                                display: block;
-                                                                                font: 16px 'Cinzel', serif
-                                                                            }
-                                                                            
-                                                                            .btn-head {
-                                                                                text-align: center;
-                                                                                color: #daa530;
-                                                                                background-color: transparent;
-                                                                                text-decoration: none;
-                                                                                margin: 1px 5px;
-                                                                                display: block;
-                                                                                font: 1.8em 'Cinzel', serif;
-                                                                            }
-                                                                            
-                                                                            @media (min-width: 580px) {
-                                                                                .btn-head {
-                                                                                    font-size: 40px;
-                                                                                    display: block;
-                                                                                    margin: 30px;
-                                                                                    padding: none
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            .btn {
-                                                                                width: 150px;
-                                                                                height: 45px;
-                                                                                list-style: none;
-                                                                                display: inline-block;
-                                                                                text-align: center;
-                                                                                white-space: nowrap;
-                                                                                vertical-align: middle;
-                                                                                cursor: pointer;
-                                                                                text-decoration: none;
-                                                                                padding: 10px;
-                                                                                font-size: 16px;
-                                                                                font-weight: 700;
-                                                                                transition: all .1s ease 0;
-                                                                                margin: 5px 50px 15px;
-                                                                                background-color: #001;
-                                                                                text-shadow: 0.5px 0.5px 0.5px white;
-                                                                                color: silver;
-                                                                                border-radius: 8px 8px 8px 8px;
-                                                                            }
-                                                                            
-                                                                            @media (min-width: 48em) {
-                                                                                .btn {
-                                                                                    width: 200px;
-                                                                                    font-size: 20px;
-                                                                                    margin-right: 40px
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            .btn-head:hover {
-                                                                                background-color: transparent;
-                                                                                border-color: transparent;
-                                                                            }
-                                                                            
-                                                                            .btn:hover {
-                                                                                background-color: #7fffd4;
-                                                                                color: #003;
-                                                                                border-color: transparent;
-                                                                            }
-                                                                            
-                                                                            a.btn:before {
-                                                                                display: inline-block;
-                                                                                vertical-align: middle;
-                                                                                padding-right: 10px;
-                                                                                padding-bottom: 5px;
-                                                                                margin: 1px;
-                                                                                text-decoration: none;
-                                                                                font: 1.5em FontAwesome;
-                                                                            }
-                                                                            
-                                                                            a.btn-call-now:before {
-                                                                                font-family: FontAwesome;
-                                                                                content: "\f098";
-                                                                                color: green;
-                                                                            }
-                                                                            
-                                                                            a.btn-map:before {
-                                                                                font-family: FontAwesome;
-                                                                                content: "\f041";
-                                                                                color: red;
-                                                                            }
-                                                                            
-                                                                            a.btn-gallery:before {
-                                                                                font-family: FontAwesome;
-                                                                                content: "\f083";
-                                                                                color: black;
-                                                                            }
-                                                                            
-                                                                            a.btn-home:before {
-                                                                                font-family: FontAwesome;
-                                                                                content: "\f015";
-                                                                                color: red
-                                                                            }
-                                                                            
-                                                                            .bg-img {
-                                                                                height: 300px;
-                                                                                width: 100%;
-                                                                                overflow: hidden;
-                                                                                position: relative;
-                                                                                border-style: solid;
-                                                                                border-width: 0;
-                                                                                float: left;
-                                                                                background-repeat: round;
-                                                                                text-align: center;
-                                                                                margin-bottom: 20px;
-                                                                                margin-left: 0;
-                                                                            }
-                                                                            
-                                                                            .bg-img>img {
-                                                                                top: -9999px;
-                                                                                bottom: -9999px;
-                                                                                left: -9999px;
-                                                                                right: -9999px;
-                                                                                margin: auto;
-                                                                                min-width: 100%
-                                                                            }
-                                                                            
-                                                                            @media only screen and (min-width: 600.1px) {
-                                                                                .bg-img {
-                                                                                    margin-top: 30px;
-                                                                                    height: 500px;
-                                                                                    width: 70%;
-                                                                                    border-radius: 50%;
-                                                                                    margin-left: 15%;
-                                                                                    margin-right: 15%;
-                                                                                    background-repeat: round
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media only screen and (max-width:600px) {
-                                                                                .bg-img {
-                                                                                    margin-top: 30px;
-                                                                                    height: 500px;
-                                                                                    width: 100%;
-                                                                                    float: left;
-                                                                                    margin-left: none;
-                                                                                    background-repeat: round
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media only screen and (max-width:480px) {
-                                                                                .bg-img {
-                                                                                    margin-top: 20px;
-                                                                                    height: 300px;
-                                                                                    width: 100%;
-                                                                                    float: left;
-                                                                                    margin-left: 0;
-                                                                                    background-repeat: round;
-                                                                                    z-index: 0;
-                                                                                    position: relative;
-                                                                                    overflow: hidden
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            .services {
-                                                                                text-align: left!important;
-                                                                                margin-left: 10px!important
-                                                                            }
-                                                                            
-                                                                            .stars {
-                                                                                display: inline-block;
-                                                                                vertical-align: middle;
-                                                                                color: #faebd7
-                                                                            }
-                                                                            
-                                                                            .test-align {
-                                                                                float: left;
-                                                                                margin: 10px;
-                                                                                padding: none
-                                                                            }
-                                                                            
-                                                                            .sources {
-                                                                                color: #daa520
-                                                                            }
-                                                                            
-                                                                            .headings {
-                                                                                margin-bottom: 0;
-                                                                                margin-top: 30px;
-                                                                                font-weight: none;
-                                                                                text-align: center
-                                                                            }
-                                                                            
-                                                                            a {
-                                                                                text-decoration: none!important;
-                                                                                border: transparent!important;
-                                                                                color: #daa530;
-                                                                            }
-                                                                            
-                                                                            .wrap {
-                                                                                overflow: hidden;
-                                                                                margin: 0
-                                                                            }
-                                                                            
-                                                                            .box {
-                                                                                float: left;
-                                                                                position: relative;
-                                                                                width: 33%;
-                                                                                padding-bottom: 33%
-                                                                            }
-                                                                            
-                                                                            .boxInner {
-                                                                                position: absolute;
-                                                                                left: 10px;
-                                                                                right: 10px;
-                                                                                top: 0px;
-                                                                                bottom: 10px;
-                                                                                overflow: hidden
-                                                                            }
-                                                                            
-                                                                            .boxInner img {
-                                                                                width: 100%;
-                                                                            }
-                                                                            
-                                                                            .boxInner .titleBox {
-                                                                                position: absolute;
-                                                                                bottom: 0;
-                                                                                left: 0;
-                                                                                right: 0;
-                                                                                margin-bottom: -50px;
-                                                                                background: #000;
-                                                                                background: rgba(0, 0, 0, 0.5);
-                                                                                color: #FFF;
-                                                                                padding: 0;
-                                                                                text-align: center;
-                                                                                transition: all .3s ease-out;
-                                                                            }
-                                                                            
-                                                                            body.no-touch .boxInner:hover .titleBox,
-                                                                            body.touch .boxInner.touchFocus .titleBox {
-                                                                                margin-bottom: 0
-                                                                            }
-                                                                            
-                                                                            @media only screen and (max-width: 600px) {
-                                                                                .gallery-img {
-                                                                                    width: 400px;
-                                                                                    height: 100%;
-                                                                                    margin-top: -60px
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media only screen and (max-width: 480px) {
-                                                                                .gallery-img {
-                                                                                    width: 300px;
-                                                                                    height: 100%;
-                                                                                    margin-top: 0px;
-                                                                                }
-                                                                                .box {
-                                                                                    height: 100%;
-                                                                                    width: 100%;
-                                                                                    padding-bottom: 100%;
-                                                                                    margin-top: -30px
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media only screen and (max-width: 650px) and (min-width: 481px) {
-                                                                                .box {
-                                                                                    width: 50%;
-                                                                                    padding-bottom: 50%;
-                                                                                    margin-top: -10px
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media only screen and (max-width: 1050px) and (min-width: 651px) {
-                                                                                .box {
-                                                                                    width: 50%;
-                                                                                    padding-bottom: 50%;
-                                                                                    margin-top: -10px
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media only screen and (max-width: 1290px) and (min-width: 1051px) {
-                                                                                .box {
-                                                                                    width: 33.3%;
-                                                                                    padding-bottom: 33.3%;
-                                                                                    margin-top: -10px
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            .footer-distributed {
-                                                                                background-color: transparent;
-                                                                                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-                                                                                box-sizing: border-box;
-                                                                                width: 100%;
-                                                                                font: bold 16px sans-serif;
-                                                                                text-align: left;
-                                                                                padding: 50px 40px 40px 40px;
-                                                                                margin-top: 30px;
-                                                                                overflow: hidden;
-                                                                            }
-                                                                            /* Footer social icons */
-                                                                            
-                                                                            .footer-distributed .footer-icons {
-                                                                                margin-top: 60px;
-                                                                                margin-left: 10%;
-                                                                            }
-                                                                            
-                                                                            .footer-distributed .footer-icons a {
-                                                                                display: inline-block;
-                                                                                width: 50px;
-                                                                                height: 50px;
-                                                                                cursor: pointer;
-                                                                                background-color: black;
-                                                                                border-radius: 50%;
-                                                                                font-size: 25px;
-                                                                                color: silver;
-                                                                                text-shadow: 2px 1px 1px #daa520;
-                                                                                text-align: center;
-                                                                                line-height: 35px;
-                                                                                margin-right: 5px;
-                                                                                margin-bottom: 5px;
-                                                                                padding: 10px;
-                                                                            }
-                                                                            /* Footer Right */
-                                                                            
-                                                                            .footer-distributed .footer-right {
-                                                                                float: right;
-                                                                            }
-                                                                            
-                                                                            .footer-distributed .footer-right p {
-                                                                                display: inline-block;
-                                                                                vertical-align: top;
-                                                                                margin: 15px 42px 10px 0px;
-                                                                                color: #ffffff;
-                                                                            }
-                                                                            /* The contact form */
-                                                                            
-                                                                            .footer-distributed form {
-                                                                                display: inline-block;
-                                                                            }
-                                                                            
-                                                                            .footer-distributed form input,
-                                                                            .footer-distributed form textarea {
-                                                                                display: block;
-                                                                                border-radius: 3px;
-                                                                                box-sizing: border-box;
-                                                                                background-color: #1f2022;
-                                                                                box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-                                                                                border: none;
-                                                                                resize: none;
-                                                                                font: arial;
-                                                                                font-size: 14px;
-                                                                                font-weight: normal;
-                                                                                color: #d1d2d2;
-                                                                                width: 400px;
-                                                                                padding: 18px;
-                                                                            }
-                                                                            
-                                                                            .footer-distributed ::-webkit-input-placeholder {
-                                                                                color: #5c666b;
-                                                                            }
-                                                                            
-                                                                            .footer-distributed ::-moz-placeholder {
-                                                                                color: #5c666b;
-                                                                                opacity: 1;
-                                                                            }
-                                                                            
-                                                                            .footer-distributed :-ms-input-placeholder {
-                                                                                color: #5c666b;
-                                                                            }
-                                                                            
-                                                                            .footer-distributed form input {
-                                                                                height: 55px;
-                                                                                margin-bottom: 15px;
-                                                                            }
-                                                                            
-                                                                            .footer-distributed form textarea {
-                                                                                height: 100px;
-                                                                                margin-bottom: 20px;
-                                                                            }
-                                                                            
-                                                                            .footer-distributed form button {
-                                                                                border-radius: 3px;
-                                                                                background-color: #000;
-                                                                                color: silver;
-                                                                                border: 0;
-                                                                                padding: 15px 50px;
-                                                                                font-weight: bold;
-                                                                                float: right;
-                                                                            }
-                                                                            
-                                                                            @media (min-width: 600px) {
-                                                                                .footer-distributed .footer-icons a {
-                                                                                    font-size: 30px;
-                                                                                    height: 50px;
-                                                                                    width: 50px;
-                                                                                    padding: 10px;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media (min-width: 1000px) {
-                                                                                .footer-distributed .footer-icons a {
-                                                                                    font-size: 60px;
-                                                                                    height: 70px;
-                                                                                    width: 70px;
-                                                                                    padding: 20px;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media (max-width: 1000px) {
-                                                                                .footer-distributed {
-                                                                                    font: bold 14px 'Cinzel';
-                                                                                }
-                                                                                .footer-distributed form input,
-                                                                                .footer-distributed form textarea {
-                                                                                    width: 250px;
-                                                                                }
-                                                                                .footer-distributed form button {
-                                                                                    padding: 10px 35px;
-                                                                                }
-                                                                                @media (max-width: 800px) {
-                                                                                    .footer-distributed {
-                                                                                        padding: 30px;
-                                                                                    }
-                                                                                    .footer-distributed .footer-left,
-                                                                                    .footer-distributed .footer-right {
-                                                                                        float: none;
-                                                                                        max-width: 300px;
-                                                                                        margin: 0 auto;
-                                                                                    }
-                                                                                    .footer-distributed .footer-left {
-                                                                                        margin-bottom: 40px;
-                                                                                    }
-                                                                                    .footer-distributed form {
-                                                                                        margin-top: 30px;
-                                                                                        display: block;
-                                                                                    }
-                                                                                    .footer-distributed form button {
-                                                                                        float: none;
-                                                                                    }
-                                                                                    .footer-distributed .footer-icons {
-                                                                                        margin-left: 15px;
-                                                                                    }
+@import 'normalize.css';
+html {
+    box-sizing: border-box
+}
+
+*,
+:before,
+:after {
+    box-sizing: inherit
+}
+
+html,
+body {
+    background-color: #000;
+    background: no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#002));
+    background: -webkit-linear-gradient(top, #000, #002);
+    background: -moz-linear-gradient(top, #000, end-color);
+    background: linear-gradient(to bottom, #000, #002);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Cinzel', serif;
+    color: #faebd7;
+    font-weight: none
+}
+
+.container {
+    padding-right: auto;
+    padding-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+    background-color: transparent
+}
+
+.row {
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: 15px
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+[class*='col-'] {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media (min-width: 48em) {
+    [class*='col-'] {
+        float: left
+    }
+    .col-2-3 {
+        width: 66.6666%
+    }
+    .col-1-3 {
+        width: 33.3333%
+    }
+    .col-1-2 {
+        width: 50%
+    }
+    .pull-right-sm {
+        float: right
+    }
+}
+
+@media only screen and (max-width: 47.9375em) {
+    .remove-gutter-xs {
+        padding-left: 0;
+        padding-right: 0
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: .5s
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #faebd7;
+    text-shadow: 1px 1px 1px #ffd700;
+    display: block;
+    transition: .3s
+}
+
+#top {
+    font-size: 30px;
+    color: silver;
+    margin: 0;
+    position: absolute;
+    z-index: 3;
+    background-color: #002;
+    width: 100%;
+    height: 40px;
+    float: left
+}
+
+#top:before {
+    font-family: FontAwesome;
+    content: '\f03a';
+    color: #000;
+    text-shadow: 2px 2px 2px #daa520;
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+.menuDown:after {
+    font-family: FontAwesome;
+    content: '\f219';
+    padding-left: 10px;
+    color: #fff;
+    font-size: 15px
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #daa520
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px #ffd700
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px
+    }
+    .sidenav a {
+        font-size: 18px
+    }
+}
+
+.logo {
+    overflow: auto;
+    display: inline-block;
+    color: #fff;
+    opacity: .8;
+    margin: 50px 20px 0;
+    text-align: center
+}
+
+.logo-primary img {
+    height: 100%;
+    width: 100%;
+    margin-top: none;
+    padding: none;
+    margin-bottom: 0
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.nav>li {
+    vertical-align: middle;
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    float: left
+}
+
+p {
+    float: left;
+    background-color: transparent;
+    margin: 0 10px;
+    font: 16px sans-serif
+}
+
+.header-primary {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.nav>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.nav-primary {
+    font-size: 1.2em;
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+    display: inline
+}
+
+@media (min-width: 480px) {
+    .nav>li {
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+        display: inline
+    }
+}
+
+.Neil-Keown {
+    color: silver;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+    font: 16px Cinzel, serif
+}
+
+.btn-head {
+    text-align: center;
+    color: #daa530;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 1px 5px;
+    display: block;
+    font: 1.8em Cinzel, serif
+}
+
+@media (min-width: 580px) {
+    .btn-head {
+        font-size: 40px;
+        display: block;
+        margin: 30px;
+        padding: none
+    }
+}
+
+.btn {
+    width: 150px;
+    height: 45px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .1s ease 0;
+    margin: 5px 50px 15px;
+    background-color: #001;
+    text-shadow: .5px .5px .5px #fff;
+    color: silver;
+    border-radius: 8px 8px 8px 8px
+}
+
+@media (min-width: 48em) {
+    .btn {
+        width: 200px;
+        font-size: 20px;
+        margin-right: 40px
+    }
+}
+
+.btn-head:hover {
+    background-color: transparent;
+    border-color: transparent
+}
+
+.btn:hover {
+    background-color: #7fffd4;
+    color: #003;
+    border-color: transparent
+}
+
+a.btn:before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin: 1px;
+    text-decoration: none;
+    font: 1.5em FontAwesome
+}
+
+a.btn-call-now:before {
+    font-family: FontAwesome;
+    content: "\f098";
+    color: green
+}
+
+a.btn-map:before {
+    font-family: FontAwesome;
+    content: "\f041";
+    color: red
+}
+
+a.btn-gallery:before {
+    font-family: FontAwesome;
+    content: "\f083";
+    color: #000
+}
+
+a.btn-home:before {
+    font-family: FontAwesome;
+    content: "\f015";
+    color: red
+}
+
+.bg-img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-style: solid;
+    border-width: 0;
+    float: left;
+    background-repeat: round;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0
+}
+
+.bg-img>img {
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    min-width: 100%
+}
+
+@media only screen and (min-width: 600.1px) {
+    .bg-img {
+        margin-top: 30px;
+        height: 500px;
+        width: 70%;
+        border-radius: 50%;
+        margin-left: 15%;
+        margin-right: 15%;
+        background-repeat: round
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .bg-img {
+        margin-top: 30px;
+        height: 500px;
+        width: 100%;
+        float: left;
+        margin-left: none;
+        background-repeat: round
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .bg-img {
+        margin-top: 20px;
+        height: 300px;
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        background-repeat: round;
+        z-index: 0;
+        position: relative;
+        overflow: hidden
+    }
+}
+
+.services {
+    text-align: left!important;
+    margin-left: 10px!important
+}
+
+.stars {
+    display: inline-block;
+    vertical-align: middle;
+    color: #faebd7
+}
+
+.test-align {
+    float: left;
+    margin: 10px;
+    padding: none
+}
+
+.sources {
+    color: #daa520
+}
+
+.headings {
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-weight: none;
+    text-align: center
+}
+
+a {
+    text-decoration: none!important;
+    border: transparent!important;
+    color: #daa530
+}
+
+.wrap {
+    overflow: hidden;
+    margin: 0
+}
+
+.box {
+    float: left;
+    position: relative;
+    width: 33%;
+    padding-bottom: 33%
+}
+
+.boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    bottom: 10px;
+    overflow: hidden
+}
+
+.boxInner img {
+    width: 100%
+}
+
+.boxInner .titleBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -50px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 0;
+    text-align: center;
+    transition: all .3s ease-out
+}
+
+body.no-touch .boxInner:hover .titleBox,
+body.touch .boxInner.touchFocus .titleBox {
+    margin-bottom: 0
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery-img {
+        width: 400px;
+        height: 100%;
+        margin-top: -60px
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery-img {
+        width: 300px;
+        height: 100%;
+        margin-top: 0
+    }
+    .box {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 100%;
+        margin-top: -30px
+    }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+        margin-top: -10px
+    }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+        margin-top: -10px
+    }
+}
+
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+    .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+        margin-top: -10px
+    }
+}
+
+.footer-distributed {
+    background-color: transparent;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 40px 40px;
+    margin-top: 30px;
+    overflow: hidden
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 60px;
+    margin-left: 10%
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 50%;
+    font-size: 25px;
+    color: silver;
+    text-shadow: 2px 1px 1px #daa520;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 10px
+}
+
+.footer-distributed .footer-right {
+    float: right
+}
+
+.footer-distributed .footer-right p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 10px 0;
+    color: #fff
+}
+
+.footer-distributed form {
+    display: inline-block
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    font: arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #d1d2d2;
+    width: 400px;
+    padding: 18px
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+    color: #5c666b
+}
+
+.footer-distributed ::-moz-placeholder {
+    color: #5c666b;
+    opacity: 1
+}
+
+.footer-distributed :-ms-input-placeholder {
+    color: #5c666b
+}
+
+.footer-distributed form input {
+    height: 55px;
+    margin-bottom: 15px
+}
+
+.footer-distributed form textarea {
+    height: 100px;
+    margin-bottom: 20px
+}
+
+.footer-distributed form button {
+    border-radius: 3px;
+    background-color: #000;
+    color: silver;
+    border: 0;
+    padding: 15px 50px;
+    font-weight: 700;
+    float: right
+}
+
+@media (min-width: 600px) {
+    .footer-distributed .footer-icons a {
+        font-size: 30px;
+        height: 50px;
+        width: 50px;
+        padding: 10px
+    }
+}
+
+@media (min-width: 1000px) {
+    .footer-distributed .footer-icons a {
+        font-size: 60px;
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+        margin-top: 300px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-distributed {
+        font: bold 14px Cinzel
+    }
+    .footer-distributed form input,
+    .footer-distributed form textarea {
+        width: 250px
+    }
+    .footer-distributed form button {
+        padding: 10px 35px
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-distributed {
+        padding: 30px
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        float: none;
+        max-width: 300px;
+        margin: 0 auto
+    }
+    .footer-distributed .footer-left {
+        margin-bottom: 40px
+    }
+    .footer-distributed form {
+        margin-top: 30px;
+        display: block
+    }
+    .footer-distributed form button {
+        float: none
+    }
+    .footer-distributed .footer-icons {
+        margin-right: 15px;
+        text-align: center;
+    }
+}
