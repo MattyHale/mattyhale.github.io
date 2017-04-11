@@ -433,11 +433,12 @@
 
                 <p>Contact Us</p>
 
-                <form action="mailto:gosfordjewellers@gmail.com" enctype="text/plain" method="post">
+                <form action="mailto:gosfordjewellers@gmail.com" enctype="text/plain" method="GET">
+                    <input type="text" placeholder="Subject" name="subject" />
                     <input type="text" name="email" placeholder="Your email address" /><br>
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button>Send</button>
-
+                    <textarea name="body" placeholder="Message"></textarea>
+                    <br>
+                    <input type="submit" value="Send" />
                 </form>
 
 
