@@ -512,102 +512,30 @@ body.touch .boxInner.touchFocus .titleBox {
 }
 
 .footer-distributed {
-    background-color: transparent;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
     width: 100%;
-    font: bold 16px sans-serif;
-    text-align: left;
-    padding: 50px 40px 40px;
-    margin-top: 30px;
-    overflow: hidden
+    text-align: center;
+    margin-top: 1px;
+    overflow: hidden;
 }
 
 .footer-distributed .footer-icons {
-    margin-top: 50px;
     width: 100%;
 }
 
 .footer-distributed .footer-icons a {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    padding: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    padding: 5px;
     cursor: pointer;
     background-color: #000;
     border-radius: 50%;
     color: silver;
     text-shadow: 2px 1px 1px #daa520;
     text-align: center;
-    line-height: 35px;
     margin-right: 5px;
     margin-bottom: 5px;
-}
-
-.footer-distributed .footer-right {
-    float: right
-}
-
-.footer-distributed .footer-right p {
-    display: inline-block;
-    vertical-align: top;
-    margin: 15px 42px 10px 0;
-    color: #fff
-}
-
-.footer-distributed form {
-    display: inline-block
-}
-
-.footer-distributed form input,
-.footer-distributed form textarea {
-    display: block;
-    border-radius: 3px;
-    box-sizing: border-box;
-    background-color: #1f2022;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: none;
-    resize: none;
-    font: arial;
-    font-size: 14px;
-    font-weight: 400;
-    color: #d1d2d2;
-    width: 400px;
-    padding: 18px
-}
-
-.footer-distributed ::-webkit-input-placeholder {
-    color: #5c666b
-}
-
-.footer-distributed ::-moz-placeholder {
-    color: #5c666b;
-    opacity: 1
-}
-
-.footer-distributed :-ms-input-placeholder {
-    color: #5c666b
-}
-
-.footer-distributed form input {
-    height: 55px;
-    margin-bottom: 15px
-}
-
-.footer-distributed form textarea {
-    height: 100px;
-    margin-bottom: 20px
-}
-
-.footer-distributed form button {
-    border-radius: 3px;
-    background-color: #000;
-    color: silver;
-    border: 0;
-    padding: 15px 50px;
-    font-weight: 700;
-    float: right
 }
 
 @media (min-width: 480px) {
@@ -630,25 +558,17 @@ body.touch .boxInner.touchFocus .titleBox {
 
 @media (min-width: 1000px) {
     .footer-distributed .footer-icons a {
-        font-size: 50px;
+        font-size: 45px;
         height: 80px;
         width: 80px;
-        padding: 20px;
-        margin-top: 300px;
-        margin-left: 10px;
+        padding: 15px;
+        margin-top: 50px;
     }
 }
 
 @media (max-width: 1000px) {
     .footer-distributed {
         font: bold 14px Cinzel
-    }
-    .footer-distributed form input,
-    .footer-distributed form textarea {
-        width: 250px
-    }
-    .footer-distributed form button {
-        padding: 10px 35px
     }
     .footer-distributed .footer-icons {
         margin-right: 10px;
@@ -661,25 +581,20 @@ body.touch .boxInner.touchFocus .titleBox {
     .footer-distributed {
         padding: 30px
     }
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-right {
-        float: none;
-        max-width: 300px;
-        margin: 0 auto
-    }
-    .footer-distributed .footer-left {
-        margin-bottom: 40px
-    }
-    .footer-distributed form {
-        margin-top: 30px;
-        display: block
-    }
-    .footer-distributed form button {
-        float: none
-    }
     .footer-distributed .footer-icons {
         margin-right: 20px;
         text-align: center;
         width: 100%;
     }
+}
+
+#wedev {
+    width: 100%;
+    text-align: center;
+}
+
+#wedev:before {
+    font-family: FontAwesome;
+    content: '\f1f9';
+    margin-right: 5px;
 }
