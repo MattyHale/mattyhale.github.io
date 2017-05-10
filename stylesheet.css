@@ -598,3 +598,8 @@ body.touch .boxInner.touchFocus .titleBox {
     content: '\f1f9';
     margin-right: 5px;
 }
+
+hr {
+    width: 90%;
+    color: white;
+}
