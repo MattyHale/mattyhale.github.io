@@ -271,26 +271,26 @@ p {
     background-color: #001;
     text-shadow: .5px .5px .5px #fff;
     color: silver;
-    border-radius: 8px 8px 8px 8px
+    border-radius: 8px 8px 8px 8px;
 }
 
 @media (min-width: 48em) {
     .btn {
         width: 200px;
         font-size: 20px;
-        margin-right: 40px
+        margin-right: 40px;
     }
 }
 
 .btn-head:hover {
     background-color: transparent;
-    border-color: transparent
+    border-color: transparent;
 }
 
 .btn:hover {
     background-color: #7fffd4;
     color: #003;
-    border-color: transparent
+    border-color: transparent;
 }
 
 a.btn:before {
@@ -300,7 +300,7 @@ a.btn:before {
     padding-bottom: 5px;
     margin: 1px;
     text-decoration: none;
-    font: 1.5em FontAwesome
+    font: 1.5em;
 }
 
 a.btn-call-now:before {
@@ -312,19 +312,20 @@ a.btn-call-now:before {
 a.btn-map:before {
     font-family: FontAwesome;
     content: "\f041";
-    color: red
+    color: red;
 }
 
 a.btn-gallery:before {
     font-family: FontAwesome;
     content: "\f083";
-    color: #000
+    color: #000;
+    text-shadow: .5px .5px .5px #fff;
 }
 
 a.btn-home:before {
     font-family: FontAwesome;
     content: "\f015";
-    color: red
+    color: red;
 }
 
 .bg-img {
@@ -338,7 +339,7 @@ a.btn-home:before {
     background-repeat: round;
     text-align: center;
     margin-bottom: 20px;
-    margin-left: 0
+    margin-left: 0;
 }
 
 .bg-img>img {
